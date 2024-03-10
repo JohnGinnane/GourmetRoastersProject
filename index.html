@@ -4,22 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Test</title>
-
+    <link rel="stylesheet" href="lib/bootstrap-5.3/css/bootstrap.css">
+    <script src= "lib/bootstrap-5.3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="styles/style.css" >
 
     <!-- https://stackoverflow.com/a/76120965 -->
     <!-- How to load header.html into each page -->
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script>
-        $(function() {
-            console.log("test");
-          $('#header').load('header.html');
-        });
-      </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function() {
+        $('#header').load('header.html');
+      });
+    </script>
 </head>
 <body>
-    <div id="header"></div>
-    Hello world!
-<a href="about-us/">About Us</a>
-
+    <div id="header" class="container"></div>
+    <div id="body" class="container">
+      Hello world!
+    </div>
 </body>
 </html>

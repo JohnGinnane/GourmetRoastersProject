@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-
+    <title>Abous Us</title>
+    <link rel="stylesheet" href="../lib/bootstrap-5.3/css/bootstrap.css">
+    <script src= "../lib/bootstrap-5.3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../styles/style.css" >
 
     <!-- https://stackoverflow.com/a/76120965 -->
     <!-- How to load header.html into each page -->
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script>
-        $(function() {
-          $('#header').load('header.html');
-        });
-      </script>
-</head>
-<body>
-    <div id="header"></div>
-
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function() {
+        $('#header').load('../header.html');
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header" class="container"></div>
+    <div id="body" class="container">
+      This is the 'about us' page
+    </div>
+  </body>
 </html>
