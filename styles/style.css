@@ -57,8 +57,11 @@ footer{
 #socials a i {
     font-size: 25px;
 }
-
-
+/*header css*/
+.navbar{
+    z-index: 2;
+    background-color: #F5F5F5;
+}
 /*media queries large screens*/
 @media (min-width: 992px) {
     /*home page*/
