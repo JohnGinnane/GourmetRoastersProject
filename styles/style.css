@@ -2,8 +2,15 @@ body {
     background-color: #EFEFEF;
 }
 
-div {
-    
+/* About CSS */
+@media (max-width: 768px) {
+    .about-us-img {
+        height: calc(25vw);
+        object-position: 0px 0px;
+        overflow: hidden;
+        width: calc(100vw);
+        object-fit: cover;
+    }
 }
 
 /*home page css*/
