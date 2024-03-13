@@ -5,3 +5,46 @@ body {
 div {
     
 }
+
+/*home page css*/
+/*carousal*/
+.carousal-image {
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    position: relative;
+}
+
+.carousel-item {
+    max-height: 25rem;
+}
+
+.carousal-text {
+    left: 5%;
+    top:45%;
+    border-radius: 1rem;
+    padding:1.5rem;
+}
+
+.carousal-text p{
+    font-size: 1.5rem;
+    font-style: italic;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(62, 39, 35,);
+}
+
+/*media queries homepage*/
+@media (min-width: 992px) {
+    .carousal-text {
+        left: 25%;
+        top:35%;
+        border-radius: 1rem;
+        padding:1.5rem;
+    }
+    
+    .carousal-text p{
+        font-size: 2rem;
+        font-style: italic;
+        text-shadow: 0.1rem 0.1rem 0.2rem rgba(62, 39, 35)
+    }
+
+}
