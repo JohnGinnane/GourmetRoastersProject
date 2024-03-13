@@ -1,0 +1,5 @@
+used bootstrap examples to see how navbar dropdowns are implemented
+used a combination of bootstrap and media query to dynamically resize 
+the same image for both mobile friendly and desktop friendly page
+used jquery to load header and footer in to help speed up development
+used vs code extension to quickly view changes, sort of a "wysiwyg"
