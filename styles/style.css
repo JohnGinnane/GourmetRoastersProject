@@ -31,7 +31,10 @@ div {
     font-style: italic;
     text-shadow: 0.1rem 0.1rem 0.2rem rgba(62, 39, 35,);
 }
-
+.project-btn{
+    color:#F5F5F5;
+    background-color: rgba(201, 164, 94, 0.7);
+}
 /*media queries homepage*/
 @media (min-width: 992px) {
     .carousal-text {
