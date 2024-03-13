@@ -35,8 +35,26 @@ div {
     color:#F5F5F5;
     background-color: rgba(201, 164, 94, 0.7);
 }
-/*media queries homepage*/
+
+
+/*footer css*/
+footer{
+    background-color: #3E2723;
+
+}
+
+.copyright-div{
+    background-color: #000000 !important;
+}
+
+#socials a i {
+    font-size: 25px;
+}
+
+
+/*media queries large screens*/
 @media (min-width: 992px) {
+    /*home page*/
     .carousal-text {
         left: 25%;
         top:35%;
@@ -48,6 +66,10 @@ div {
         font-size: 2rem;
         font-style: italic;
         text-shadow: 0.1rem 0.1rem 0.2rem rgba(62, 39, 35)
+    }
+    /* footer css*/
+    .container {
+        max-width: 80%;
     }
 
 }
