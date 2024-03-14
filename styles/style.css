@@ -83,7 +83,7 @@ footer{
         max-width: 80%;
     }
 
-.open-sans-Font-Test {
+/*.open-sans-Font-Test {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -91,4 +91,5 @@ footer{
   font-variation-settings:
     "wdth" 100;
 }
+
 }
