@@ -14,6 +14,25 @@ body {
     }
 }
 
+/*footer css*/
+footer{
+    background-color: #3E2723;
+
+}
+
+.copyright-div{
+    background-color: #000000 !important;
+}
+
+#socials a i {
+    font-size: 25px;
+}
+/*header css*/
+.navbar{
+    z-index: 2;
+    background-color: #F5F5F5;
+}
+
 /*home page css*/
 /*carousal*/
 .carousal-image {
@@ -24,7 +43,7 @@ body {
 }
 
 .carousel-item {
-    max-height: 25rem;
+    max-height: 30rem;
 }
 
 .carousal-text {
@@ -45,25 +64,26 @@ body {
 }
 
 
-/*footer css*/
-footer{
-    background-color: #3E2723;
 
+
+/*our story css*/
+#ourstory-img{
+    border: 0.5rem solid #FFFFFF;
+    border-bottom-width: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.our-story-container {
+    background-color: #f5f5f5;
+    padding: 2rem;
+}
+.our-story-container h2 {
+    color: #000000;
+}
+.our-story-container p {
+    color: #555555;
 }
 
-.copyright-div{
-    background-color: #000000 !important;
-}
-
-#socials a i {
-    font-size: 25px;
-}
-/*header css*/
-.navbar{
-    z-index: 2;
-    background-color: #F5F5F5;
-}
-/*media queries large screens*/
+/*media queries homepage large screens*/
 @media (min-width: 992px) {
     /*home page*/
     .carousal-text {
@@ -78,10 +98,12 @@ footer{
         font-style: italic;
         text-shadow: 0.1rem 0.1rem 0.2rem rgba(62, 39, 35)
     }
-    /* footer css*/
-    .container {
-        max-width: 80%;
+    
+    #ourstory-img{
+        height: 40rem;
     }
+    
+}
 
 /*.open-sans-Font-Test {
   font-family: "Open Sans", sans-serif;
@@ -90,6 +112,5 @@ footer{
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-}
+}*/
 
-}
