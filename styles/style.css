@@ -83,6 +83,11 @@ footer{
     color: #555555;
 }
 
+#logo-name {
+    left: 5%;
+    top:15%;
+}
+
 /*media queries homepage large screens*/
 @media (min-width: 992px) {
     /*home page*/
