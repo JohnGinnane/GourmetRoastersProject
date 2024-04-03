@@ -4,16 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gallery</title>
+    
+    <!-- Load our style first -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="media/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="lib/bootstrap-5.3/css/bootstrap.css">
     <script src= "lib/bootstrap-5.3/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="styles/style.css" >
-
+    
+    <!-- Lightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    
     <!--favicon-->
     <link rel="icon" href="media/favicon/favicon.ico">
+    
     <!-- https://stackoverflow.com/a/76120965 -->
-    <!-- How to load header.html into each page -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- How to load header.html into each page -->    
     <script>
       $(function() {
         $('#header').load('header.html');
@@ -25,7 +35,32 @@
     <div id="header" class="container-fluid"></div>
     <div id="body" class="container-fluid h-100">
       <div class="row flex-grow-1 h-100 d-flex flex-column">
-        Gallery
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+              <div class="row">
+                  <a href="media/images/cafe-table.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="media/images/thumbnail-cafe-table.webp" class="img-fluid">
+                  </a>
+                  <a href="media/images/coffee-bar.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="media/images/thumbnail-coffee-bar.webp" class="img-fluid">
+                  </a>
+                  <a href="media/images/coffee-filters.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="media/images/thumbnail-coffee-filters.webp" class="img-fluid">
+                  </a>
+              </div>
+              <div class="row">
+                  <a href="media/images/coffee-on-table-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="media/images/thumbnail-coffee-on-table-2.webp" class="img-fluid">
+                  </a>
+                  <a href="media/images/coffee-on-table-3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="media/images/thumbnail-coffee-on-table-3.webp" class="img-fluid">
+                  </a>
+                  <a href="media/images/coffee-on-table-4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="media/images/thumbnail-coffee-on-table-4.webp" class="img-fluid">
+                  </a>
+              </div>
+          </div>
+      </div>
       </div>
     </div>
     <footer id="footer" class="container-fluid fixed-bottom"></footer>

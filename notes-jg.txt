@@ -5,3 +5,6 @@ used jquery to load header and footer in to help speed up development
 used vs code extension to quickly view changes, sort of a "wysiwyg"
 
 18/03 - added lorem ipsum to see how layout would look when scaling up and down with lots of text
+
+03/04 - used https://www.pexels.com/search/coffee/ to find royalty free pictures of coffee
+used https://convertio.co/jpg-webp/ to convert above images to webp for better performance
