@@ -19,6 +19,9 @@
     <!--favicon-->
     <link rel="icon" href="media/favicon/favicon.ico">
     
+    <!-- Lightbox -->
+    <script src="lib/bs5-lightbox/index.bundle.min.js"></script>
+
     <!-- https://stackoverflow.com/a/76120965 -->
     <!-- How to load header.html into each page -->    
     <script>
@@ -33,26 +36,26 @@
     <div id="body" class="container-fluid h-100">
       <div class="row flex-grow-1 h-100 d-flex flex-column">
         <div class="row justify-content-center">
-          <div class="col-md-10">
+          <div class="col-md-8">
               <div class="row">
-                  <a href="media/images/cafe-table.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4">
+                  <a href="media/images/cafe-table.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 my-lightbox-toggle">
                       <img src="media/images/thumbnail-cafe-table.webp" class="img-fluid">
                   </a>
-                  <a href="media/images/coffee-bar.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4">
+                  <a href="media/images/coffee-bar.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 my-lightbox-toggle">
                       <img src="media/images/thumbnail-coffee-bar.webp" class="img-fluid">
                   </a>
-                  <a href="media/images/coffee-filters.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4">
+                  <a href="media/images/coffee-filters.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 my-lightbox-toggle">
                       <img src="media/images/thumbnail-coffee-filters.webp" class="img-fluid">
                   </a>
               </div>
               <div class="row">
-                  <a href="media/images/coffee-on-table-2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4">
+                  <a href="media/images/coffee-on-table-2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 my-lightbox-toggle">
                       <img src="media/images/thumbnail-coffee-on-table-2.webp" class="img-fluid">
                   </a>
-                  <a href="media/images/coffee-on-table-3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4">
+                  <a href="media/images/coffee-on-table-3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 my-lightbox-toggle">
                       <img src="media/images/thumbnail-coffee-on-table-3.webp" class="img-fluid">
                   </a>
-                  <a href="media/images/coffee-on-table-4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4">
+                  <a href="media/images/coffee-on-table-4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 my-lightbox-toggle">
                       <img src="media/images/thumbnail-coffee-on-table-4.webp" class="img-fluid">
                   </a>
               </div>
@@ -62,8 +65,17 @@
     </div>
     <footer id="footer" class="container-fluid fixed-bottom"></footer>
     
-    <!-- Lightbox -->
-    <script src="lib/bs5-lightbox/index.bundle.min.js"></script>
-    
+    <script>
+        const options = {
+            size: 'fullscreen',
+            keyboard: true
+        };
+
+        document.querySelectorAll('.my-lightbox-toggle').forEach((el) => el.addEventListener('click', (e) => {
+            e.preventDefault();
+            const lightbox = new Lightbox(el, options);
+            lightbox.show();
+        }));
+    </script>
 </body>
 </html>
