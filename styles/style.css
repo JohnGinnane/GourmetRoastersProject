@@ -107,6 +107,11 @@ footer{
     #ourstory-img{
         height: 40rem;
     }
+	
+	/* Hide all sections initially */
+    #classesSection, #careersSection, #storySection {
+        display: none;
+    }
     
 }
 
