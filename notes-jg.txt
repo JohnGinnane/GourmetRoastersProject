@@ -9,3 +9,5 @@ used vs code extension to quickly view changes, sort of a "wysiwyg"
 03/04 - used https://www.pexels.com/search/coffee/ to find royalty free pictures of coffee
 used https://convertio.co/jpg-webp/ to convert above images to webp for better performance
 used https://ashleydw.github.io/lightbox/ for light box
+
+13/04 - use lightbox on "about us" page to show additional text on images
