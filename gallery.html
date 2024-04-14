@@ -14,14 +14,10 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="media/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="lib/bootstrap-5.3/css/bootstrap.css">
-    <script src= "lib/bootstrap-5.3/js/bootstrap.js"></script>
     
     <!--favicon-->
     <link rel="icon" href="media/favicon/favicon.ico">
     
-    <!-- Lightbox -->
-    <script src="lib/bs5-lightbox/index.bundle.min.js"></script>
-
     <!-- https://stackoverflow.com/a/76120965 -->
     <!-- How to load header.html into each page -->    
     <script>
@@ -65,17 +61,9 @@
     </div>
     <footer id="footer" class="container-fluid fixed-bottom"></footer>
     
-    <script>
-        const options = {
-            size: 'fullscreen',
-            keyboard: true
-        };
-
-        document.querySelectorAll('.my-lightbox-toggle').forEach((el) => el.addEventListener('click', (e) => {
-            e.preventDefault();
-            const lightbox = new Lightbox(el, options);
-            lightbox.show();
-        }));
-    </script>
+    <!-- Bootstrap -->
+    <script src= "lib/bootstrap-5.3/js/bootstrap.js"></script>
+    <!-- Lightbox -->
+    <script src="lib/bs5-lightbox/index.bundle.min.js"></script>
 </body>
 </html>
