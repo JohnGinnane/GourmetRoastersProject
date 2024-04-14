@@ -103,77 +103,78 @@
       <div class="container location-container my-5 pb-3">
         <div class="row">
           <div class="col-lg-7">
-          <!-- <div class="row d-none d-lg-block ">
-            <p class="navbar-brand fs-1 text-black fw-bold ">
-              <img src="media/favicon/favicon.ico" alt="Logo"  class="d-inline-block align-text-top">
-              Gourmet Roasters
-            </p>
-            
-          </div>
-          <hr class="d-none d-lg-block"> -->
-          <div class="row justify-content-between">
-          <div class="col-lg-5  text-center fs-6">
-            <h3 class=""><span class="text-success"><i class="bi bi-clock-fill"></i></span> Opening Hours</h3>
-            <table style="border: 1px solid red; min-width: 300px">
-              <tr id="tr-opening-hours-monday">
-                <td class="opening-hours-day">Monday</td>
-                <td class="opening-hours-time">09:00 - 18:00</td>
-                <td class="opening-hours-arrow"></i></td>
-                <td class="opening-hours-note"></td>
-              </tr>
-              
-              <tr id="tr-opening-hours-tuesday">
-                <td class="opening-hours-day">Tuesday</td>
-                <td class="opening-hours-time">09:00 - 18:00</td>
-                <td class="opening-hours-arrow"></td>
-                <td class="opening-hours-note"></td>
-              </tr>
-              
-              <tr id="tr-opening-hours-wednesday">
-                <td class="opening-hours-day">Wednesday</td>
-                <td class="opening-hours-time">09:00 - 18:00</td>
-                <td class="opening-hours-arrow"></td>
-                <td class="opening-hours-note"></td>
-              </tr>
-              
-              <tr id="tr-opening-hours-thursday">
-                <td class="opening-hours-day">Thursday</td>
-                <td class="opening-hours-time">09:00 - 18:00</td>
-                <td class="opening-hours-arrow"></td>
-                <td class="opening-hours-note"></td>
-              </tr>
-              
-              <tr id="tr-opening-hours-friday">
-                <td class="opening-hours-day">Friday</td>
-                <td class="opening-hours-time">10:00 - 16:00</td>
-                <td class="opening-hours-arrow"></td>
-                <td class="opening-hours-note"></td>
-              </tr>
-              
-              <tr id="tr-opening-hours-saturday">
-                <td class="opening-hours-day">Saturday</td>
-                <td class="opening-hours-time">10:00 - 16:00</td>
-                <td class="opening-hours-arrow"></td>
-                <td class="opening-hours-note"></td>
-              </tr>
-              
-              <tr id="tr-opening-hours-sunday">
-                <td class="opening-hours-day">Sunday</td>
-                <td class="opening-hours-time">Closed</td>
-                <td class="opening-hours-arrow"></td>
-                <td class="opening-hours-note"></td>
-              </tr>
-            </table>
+            <div class="row justify-content-between">
+              <!-- Opening Times -->
+              <div class="col-lg-6 fs-6">
+                <div class="row d-flex justify-content-center align-items-center text-center">
+                  <h3 class=""><span class="text-success"><i class="bi bi-clock-fill"></i></span> Opening Hours</h3>
+                </div>
 
-          </div>
-          <div class="col-lg-5 text-center fs-6">
-            <h3 class=""><span class="text-danger"><i class="bi bi-pin-angle-fill"></i></span> Location</h3>
-            <p>123 Webster St</p>
-            <p>Dublin</p>
-            <p>Y35 J742</p>
-            <p>Ireland</p>
-          </div>
-          </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                  <!-- This data will be changed via JS -->
+                  <table id="table-opening-times">
+                    <tr id="tr-opening-hours-monday">
+                      <td class="opening-hours-day">Monday</td>
+                      <td class="opening-hours-time">09:00 - 18:00</td>
+                      <td class="opening-hours-arrow"></i></td>
+                      <td class="opening-hours-note"></td>
+                    </tr>
+                    
+                    <tr id="tr-opening-hours-tuesday">
+                      <td class="opening-hours-day">Tuesday</td>
+                      <td class="opening-hours-time">09:00 - 18:00</td>
+                      <td class="opening-hours-arrow"></td>
+                      <td class="opening-hours-note"></td>
+                    </tr>
+                    
+                    <tr id="tr-opening-hours-wednesday">
+                      <td class="opening-hours-day">Wednesday</td>
+                      <td class="opening-hours-time">09:00 - 18:00</td>
+                      <td class="opening-hours-arrow"></td>
+                      <td class="opening-hours-note"></td>
+                    </tr>
+                    
+                    <tr id="tr-opening-hours-thursday">
+                      <td class="opening-hours-day">Thursday</td>
+                      <td class="opening-hours-time">09:00 - 18:00</td>
+                      <td class="opening-hours-arrow"></td>
+                      <td class="opening-hours-note"></td>
+                    </tr>
+                    
+                    <tr id="tr-opening-hours-friday">
+                      <td class="opening-hours-day">Friday</td>
+                      <td class="opening-hours-time">10:00 - 16:00</td>
+                      <td class="opening-hours-arrow"></td>
+                      <td class="opening-hours-note"></td>
+                    </tr>
+                    
+                    <tr id="tr-opening-hours-saturday">
+                      <td class="opening-hours-day">Saturday</td>
+                      <td class="opening-hours-time">10:00 - 16:00</td>
+                      <td class="opening-hours-arrow"></td>
+                      <td class="opening-hours-note"></td>
+                    </tr>
+                    
+                    <tr id="tr-opening-hours-sunday">
+                      <td class="opening-hours-day">Sunday</td>
+                      <td class="opening-hours-time">Closed</td>
+                      <td class="opening-hours-arrow"></td>
+                      <td class="opening-hours-note"></td>
+                    </tr>
+                  </table>
+                </div>
+
+              </div>
+
+              <!-- Address -->
+              <div class="col-lg-5 text-center fs-6">
+                <h3 class=""><span class="text-danger"><i class="bi bi-pin-angle-fill"></i></span> Location</h3>
+                <p>123 Webster St</p>
+                <p>Dublin</p>
+                <p>Y35 J742</p>
+                <p>Ireland</p>
+              </div>
+            </div>
           </div>
           <div class="col-lg-5 position-relative">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.398388129618!2d-74.00597238494682!3d40.71277598343467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598ce53b00b7%3A0xdbae47e80443acdf!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1647950538899!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

@@ -180,11 +180,19 @@ footer{
 	.fancy {
 	font-family: "Dancing Script", cursive;
 	font-optical-sizing: auto;
-	font-weight: <weight>;
+	/* font-weight: <weight>; */
 	font-style: normal;
 	}
 
 /* Opening Hours */
+#table-opening-times {
+    width: 320px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 0px;
+}
+
 .opening-hours-day {
     width: 100px;
     text-align: left;
@@ -192,16 +200,14 @@ footer{
 
 .opening-hours-time {
     width: 100px;
-    border: 1px solid blue
+    text-align: center;
 }
 
 .opening-hours-arrow {
-    border: 1px solid green;
     text-align: left;
     width: 20px;
 }
 
 .opening-hours-note {
-    border: 1px solid yellow;
     text-align: left;
 }
