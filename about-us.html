@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="lib/bootstrap-5.3/css/bootstrap.css">
     
     <link rel="stylesheet" href="styles/style.css" >
+
+    <script src="js/about-us.js"></script>
     
     <!--favicon-->
     <link rel="icon" href="media/favicon/favicon.ico">
@@ -77,17 +79,18 @@
           </div>
           <div class="col-md-7 order-2">
             <h2 class="featurette-header fw-normal lh-1 px-2 py-2">
-              Dublin Revisited
+              Dublin '91 Revisited
             </h2>
             <p class="lead px-2 py-2">
               Starting a business isn't easy. And starting a business after spending all your money 
               on a  long trip is nigh impossible. But through sheer determination, will, and a very 
-              generous loan from the bank made it a little easier. However coffee competition in Dublin 
-              is tough. Very tough. Having set up the cafe the next goal was to find suitable talent 
-              who know how to handle the beans. Finding professional barristas who can get the most out 
-              of the beans was tricky. To help find those barristas and distinguish Gourmet Roasters from 
-              the competition we set up classes to skill up existing employees, provide knowledge to hobbyist
-              coffee enjoyers, and to have a little fun for amateurs.              
+              generous loan from the bank, it was possible. However coffee competition in Dublin 
+              is tough. Very tough. Opening the cafe in 1991, Gourmet Roasters started off slowly, 
+              but we ran into an expertise issue. We needed to find suitable talent who know how 
+              to handle the goods. Finding professional barristas who can get the most out of the beans 
+              was tricky. To help find those barristas and distinguish Gourmet Roasters from the competition 
+              we set up classes to skill up existing employees, provide knowledge to hobbyist coffee enjoyers, 
+              and to have a little fun for every day people looking to learn more about coffee.
             </p>
           </div>
         </div>
@@ -120,25 +123,133 @@
             </a>
           </div>
         </div>
+
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="row mb-4 text-center">
+            <h2>Pop Quiz</h2>
+          </div>
+          
+          <div id="pop-quiz-container" class="row">
+            <!-- Question 1 -->
+            <div class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
+              <div class="row">
+                <h5>What country did we explore?</h3>
+              </div>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q1-a1" name="pop-quiz-question-1" class="pop-quiz-radio" value="India">
+                <i></i><label for="pq-q1-a1">India</label><br>
+              </label>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q1-a2" name="pop-quiz-question-1" class="pop-quiz-radio" value="Morocco">
+                <i></i><label for="pq-q1-a2">Morocco</label><br>
+              </label>
+              
+              <label class="form-check">
+                <input type="radio" id="pq-q1-a3" name="pop-quiz-question-1" class="pop-quiz-radio" value="Brazil">
+                <i></i><label for="pq-q1-a3">Brazil</label><br>
+              </label>
+              
+              <label class="form-check">
+                <input type="radio" id="pq-q1-a4" name="pop-quiz-question-1" class="pop-quiz-radio" value="China">
+                <i></i><label for="pq-q1-a4">China</label><br>
+              </label>
+            </div>
+            
+            <!-- Question 2 -->
+            <div class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
+              <div class="row">
+                <h5>What year did we open?</h3>
+              </div>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q2-a1" name="pop-quiz-question-2" class="pop-quiz-radio" value="1492">
+                <i></i><label for="pq-q2-a1">1492</label><br>
+              </label>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q2-a2" name="pop-quiz-question-2" class="pop-quiz-radio" value="1916">
+                <i></i><label for="pq-q2-a2">1916</label><br>
+              </label>
+              
+              <label class="form-check">
+                <input type="radio" id="pq-q2-a3" name="pop-quiz-question-2" class="pop-quiz-radio" value="1991">
+                <i></i><label for="pq-q2-a3">1991</label><br>
+              </label>
+              
+              <label class="form-check">
+                <input type="radio" id="pq-q2-a4" name="pop-quiz-question-2" class="pop-quiz-radio" value="2007">
+                <i></i><label for="pq-q2-a4">2007</label><br>
+              </label>
+            </div>
+            
+            <!-- Question 3 -->
+            <div class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
+              <div class="row">
+                <h5>What feature makes us stand out?</h3>
+              </div>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q3-a1" name="pop-quiz-question-3" class="pop-quiz-radio" value="Mason">
+                <i></i><label for="pq-q3-a1">Coffee in mason jars</label><br>
+              </label>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q3-a2" name="pop-quiz-question-3" class="pop-quiz-radio" value="Barter">
+                <i></i><label for="pq-q3-a2">Barter to buy</label><br>
+              </label>
+              
+              <label class="form-check">
+                <input type="radio" id="pq-q3-a3" name="pop-quiz-question-3" class="pop-quiz-radio" value="Free">
+                <i></i><label for="pq-q3-a3">Free Food Fridays</label><br>
+              </label>
+              
+              <label class="form-check">
+                <input type="radio" id="pq-q3-a4" name="pop-quiz-question-3" class="pop-quiz-radio" value="Classes">
+                <i></i><label for="pq-q3-a4">Offer classes</label><br>
+              </label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
+              <div class="row">
+                <h5>Which of these is not a coffee bean?</h3>
+              </div>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q4-a1" name="pop-quiz-question-4" class="pop-quiz-radio" value="Spearmint">
+                <i></i><label for="pq-q4-a1">Spearmint</label><br>
+              </label>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q4-a2" name="pop-quiz-question-4" class="pop-quiz-radio" value="Arabica">
+                <i></i><label for="pq-q4-a2">Arabica</label><br>
+              </label>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q4-a3" name="pop-quiz-question-4" class="pop-quiz-radio" value="Liberica">
+                <i></i><label for="pq-q4-a3">Liberica</label><br>
+              </label>
+              
+              <label class="form-check">
+                <input type="radio" id="pq-q4-a4" name="pop-quiz-question-4" class="pop-quiz-radio" value="Robusta">
+                <i></i><label for="pq-q4-a4">Robusta</label><br>
+              </label>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <button id="pop-quiz-submit" onclick="popQuizSubmit()">Submit</button>
+          </div>
+        </div>
       </div>
     </div>
     <footer id="footer" class="container-fluid fixed-bottom"></footer>
     
+    <!-- Bootstrap -->
     <script src= "lib/bootstrap-5.3/js/bootstrap.js"></script>
     <!-- Lightbox -->
     <script src="lib/bs5-lightbox/index.bundle.min.js"></script>
-
-    <!-- <script>
-      const options = {
-          size: 'fullscreen',
-          keyboard: true
-      };
-
-      document.querySelectorAll('.my-lightbox-toggle').forEach((el) => el.addEventListener('click', (e) => {
-          e.preventDefault();
-          const lightbox = new Lightbox(el, options);
-          lightbox.show();
-      }));
-  </script> -->
   </body>
 </html>

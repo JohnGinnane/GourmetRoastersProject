@@ -19,8 +19,56 @@ body {
     
 }
 
-.pop-quiz-radio {
+.pop-quiz-radio:checked {
+    background: orange;
+}
 
+/* Custom radio buttons */
+.form-check {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.form-check > input { /* HIDE ORG RADIO & CHECKBOX */
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .form-check > i {
+    margin-right: 8px;
+    margin-left: -20px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 32px;
+    transition: 0.2s;
+    box-shadow: inset 0 0 0 16px #fff;
+    border: 1px solid gray;
+    background: gray;
+  }
+  
+.form-check > i {
+  width: 32px;
+  border-radius: 50%;
+}
+
+.form-check:hover > i {
+    box-shadow: inset 0 0 0 3px #fff;
+    background: gray;
+}
+
+.form-check > input:focus + i { /* FOCUS <i> STYLE */
+    outline: 1px solid blue;
+}
+
+.form-check > input:checked + i { /* (RADIO CHECKED) <i> STYLE */
+box-shadow: inset 0 0 0 3px #fff;
+background-color: transparent;
+background-size: 32px 32px;
+background-image: url("../media/favicon/favicon.ico");
 }
 
 #pop-quiz-submit {
