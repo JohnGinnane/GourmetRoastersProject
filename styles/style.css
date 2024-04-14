@@ -161,12 +161,26 @@ footer{
     
 }
 
-/*.open-sans-Font-Test {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings:
+	.paragraphs {
+	font-family: "Open Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-variation-settings:
     "wdth" 100;
-}*/
+	font-size: 16px;
+	}
+	
+	.headings {
+	font-family: "Abel", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	}
+	
+	.fancy {
+	font-family: "Dancing Script", cursive;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	}
 
