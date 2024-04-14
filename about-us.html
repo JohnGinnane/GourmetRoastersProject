@@ -4,13 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Us</title>
+    
+    <link rel="stylesheet" href="styles/style.css" >
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="media/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="lib/bootstrap-5.3/css/bootstrap.css">
-    <script src= "lib/bootstrap-5.3/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="styles/style.css" >
-
+    
     <!--favicon-->
     <link rel="icon" href="media/favicon/favicon.ico">
+
     <!-- https://stackoverflow.com/a/76120965 -->
     <!-- How to load header.html into each page -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -35,12 +41,18 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis metus vel sapien rutrum iaculis. Nulla ac enim sit amet orci luctus mollis. Aenean scelerisque metus sollicitudin elit fringilla, efficitur feugiat ex viverra. Duis laoreet sollicitudin consectetur. Nullam id enim ac justo pretium iaculis vitae nec diam. Integer tempus auctor mollis. Donec at arcu id nulla feugiat venenatis condimentum sit amet augue. Nunc non ex maximus, rhoncus augue id, auctor lectus. Nunc finibus ex sed cursus pharetra. Cras eros velit, sagittis sit amet ante sit amet, eleifend auctor odio. Donec sollicitudin volutpat eros, ac condimentum tortor auctor eget. Mauris vitae fermentum mi. Maecenas quis turpis nec eros porttitor laoreet vitae a dui.
             </p>
           </div>
-          <div class="col-md-5 col-12 order-1 order-md-2">
-            <img class="featurette-image img-fluid mx-auto float-end about-us-img"
-                 width="500"
-                 height="500"
-                 role="img"
-                 src="media/homepage/beans-hands.webp">
+          <div class="col-md-5 col-12 order-1 order-md-2">            
+            <a href="media/homepage/beans-hands.webp"
+               data-toggle="lightbox"
+               class="col-sm-4"
+               data-caption="Our freshly extracted coffee beans">
+              <img class="featurette-image img-fluid mx-auto float-end about-us-img"
+                   width="500"
+                   height="500"
+                   role="img"
+                   alt="Our freshly extracted coffee beans in hands"
+                   src="media/homepage/beans-hands.webp">
+            </a>
           </div>
           </a>
         </div>
@@ -48,11 +60,17 @@
         <!-- Part 2-->
         <div class="row featurette g-0">
           <div class="col-md-5 order-1 px-0 py-0">
-            <img class="featurette-image img-fluid mx-auto float-start about-us-img"
-                  width="500"
-                  heigh="500"
-                  role="img"
-                  src="media/homepage/coffee-roasting.webp">
+            <a href="media/homepage/coffee-roasting.webp"
+               data-toggle="lightbox"
+               class="col-sm-4"
+               data-caption="High quality beans being hand roasted in a pan">
+              <img class="featurette-image img-fluid mx-auto float-start about-us-img"
+                   width="500"
+                   heigh="500"
+                   role="img"
+                   alt="Beans being roasted in a pan"
+                   src="media/homepage/coffee-roasting.webp">
+            </a>
           </div>
           <div class="col-md-7 order-2">
             <h2 class="featurette-header fw-normal lh-1 px-2 py-2">
@@ -75,15 +93,40 @@
             </p>
           </div>
           <div class="col-md-5 order-1 order-md-2">
-            <img class="featurette-image img-fluid mx-auto float-end about-us-img"
-                  width="500"
-                  height="500"
-                  role="img"
-                  src="media/homepage/coffee-brewing.webp">
+            
+            <a href="media/homepage/coffee-brewing.webp"
+               class="col-sm-4"
+               data-toggle="lightbox"
+               data-caption="Hot cup of espresso in a cup">
+              <img class="featurette-image img-fluid mx-auto float-start about-us-img"
+                   width="500"
+                   heigh="500"
+                   role="img"
+                   alt="Hot cup of espresso in a cup"
+                   src="media/homepage/coffee-brewing.webp">
+                   
+            </a>
           </div>
         </div>
       </div>
     </div>
     <footer id="footer" class="container-fluid fixed-bottom"></footer>
+    
+    <script src= "lib/bootstrap-5.3/js/bootstrap.js"></script>
+    <!-- Lightbox -->
+    <script src="lib/bs5-lightbox/index.bundle.min.js"></script>
+
+    <!-- <script>
+      const options = {
+          size: 'fullscreen',
+          keyboard: true
+      };
+
+      document.querySelectorAll('.my-lightbox-toggle').forEach((el) => el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const lightbox = new Lightbox(el, options);
+          lightbox.show();
+      }));
+  </script> -->
   </body>
 </html>
