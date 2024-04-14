@@ -3,7 +3,7 @@ body {
     padding-bottom: 110px;
 }
 
-/* About CSS */
+/* About us CSS */
 @media (max-width: 768px) {
     .about-us-img {
         height: calc(25vw);
@@ -12,6 +12,20 @@ body {
         width: calc(100vw);
         object-fit: cover;
     }
+}
+
+.pop-quiz-questions {
+    margin-bottom: 15px;
+    
+}
+
+.pop-quiz-radio {
+
+}
+
+#pop-quiz-submit {
+    width: 100px;
+    margin: 10px
 }
 
 /*footer css*/
