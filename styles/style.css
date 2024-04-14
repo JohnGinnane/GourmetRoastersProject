@@ -155,7 +155,7 @@ footer{
     }
 	
 	/* Hide all sections initially */
-    #classesSection, #careersSection, #storySection {
+    #classesSection, #careersSection, #otherSection {
         display: none;
     }
     
