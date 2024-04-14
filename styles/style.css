@@ -184,3 +184,24 @@ footer{
 	font-style: normal;
 	}
 
+/* Opening Hours */
+.opening-hours-day {
+    width: 100px;
+    text-align: left;
+}
+
+.opening-hours-time {
+    width: 100px;
+    border: 1px solid blue
+}
+
+.opening-hours-arrow {
+    border: 1px solid green;
+    text-align: left;
+    width: 20px;
+}
+
+.opening-hours-note {
+    border: 1px solid yellow;
+    text-align: left;
+}
