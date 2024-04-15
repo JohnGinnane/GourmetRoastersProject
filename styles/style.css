@@ -122,6 +122,11 @@ footer{
 }
 .project-btn{
     color:#F5F5F5;
+    background-color: #C9A45A;
+}
+
+.carousal-btn{
+    color:#F5F5F5;
     background-color: rgba(201, 164, 94, 0.7);
 }
 
@@ -202,6 +207,16 @@ footer{
     width:1.75rem;
     height:1.75rem;
 }
+
+/*contact page*/
+#contact-page{
+    background-image: url('../media/contactpage/background-contactpage.webp'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+
 /*media queries homepage large screens*/
 @media (min-width: 992px) {
     /*home page*/
