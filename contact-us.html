@@ -37,23 +37,16 @@
     </script>
 </head>
 	
-<body>
+<body class="bg-light" id="contact-page" >
 	<div id="header" class="container-fluid"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5">
-						<!-- Contact Card -->
-						<div class="contact-card">
-							<h5 class="headings">Contact Information</h5>
-							<p class="paragraphs">Feel free to contact us at any of the below!</p>
-							<p class="paragraphs">Email: gourmetroasters@gmail.com</p>
-							<p class="paragraphs">Phone: 123-456-7890</p>
-							<p class="paragraphs">Address: 123 Webster St,  Dublin, Ireland </p>
-						</div>
-					</div>
-					<div class="col-md-7">
-							<h1 class ="headings">Or use the contact form below</h1>
-							<form id="contactForm" class="needs-validation" onsubmit="Contact(); return false;" novalidate>
+			<div class="container container d-flex justify-content-center  my-4">
+				
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-body">
+							<h1 class ="headings mb-4 text-center">Have any Questions? </h1>
+							<h2 class ="headings mb-4 text-center fs-5">Please use our contact form below. <i class="bi bi-send"></i></h2>
+							<form id="contactForm" class="needs-validation d-flex flex-column" onsubmit="Contact(); return false;" novalidate>
 								<div class="form-group">
 									<label for="option">Please choose what you would like to hear more about:</label>
 									<select class="form-control" id="option" onchange="showOptions()">
@@ -153,8 +146,11 @@
 									<div class="invalid-feedback">Please enter your question.</div>
 								</div>
 							</div>
-							<button type="submit" class="btn btn-primary">Submit</button>
+							<div class="text-center mb-4">
+							    <button type="submit" class="btn project-btn">Submit</button>
+						  </div>
 						</form>
+					</div>
 					</div>
 				</div>
 			</div>
