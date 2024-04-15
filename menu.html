@@ -14,6 +14,7 @@
     <!-- https://stackoverflow.com/a/76120965 -->
     <!-- How to load header.html into each page -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/menu.js"></script>
     <script>
       $(function() {
         $('#header').load('header.html');
@@ -23,62 +24,85 @@
 </head>
 <body>
     <div id="header" class="container-fluid"></div>
-    <div id="body" class=" h-100 ">
-      
-      <section id="menu-section" >
-        <h1 class="text-center mb-4">~●Cafe Menu●~</h1>
-        <div id="menu-container" class="row">
-            <div class="col-md-6">
-                <h3>Light Meals <i class="fa-solid fa-plate-wheat"></i></h3>
-                <ul class="list-unstyled">
-                    <li>Toasted sandwiches with salad/chips<br><strong>(beef/chicken/veg)</strong><span class="prices float-end">15€</span></li>
-                    <li>Smoked salmon Cream Cheese bagel<span class="prices float-end">15€</span></li>
-                    <li>Mini pies:<span class="prices float-end">12€</span></li>
-                    <li>Avo on toast with spicy<br>omlette<span class="prices float-end">17€</span></li>
-                    <li>Eggs benedict <br>on english muffin<span class="prices float-end">18€</span></li>
-                </ul>
-                <h3>Bakery <i class="fa-solid fa-cookie"></i></h3>
-                <ul class="list-unstyled">
-                    <li><strong><i>*Subject to change</i></strong></li>
-                    <li>Croissant<strong>(plain/chocolate)</strong><span class="prices float-end">2€</span></li>
-                    <li>Muffins<span class="prices float-end">3€</span></li>
-                    <li>Cakes<span class="prices float-end">5€</span></li>
-                    <li>Pancakes with strawberries<br> and cream<span class="prices float-end">10€</span></li>
-                    <li>Waffles and icecream<span class="prices float-end">10€</span></li>
-                    <li>French Toast with maple syrup<span class="prices float-end">9€</span></li>
-                </ul>
+    <div id="body" class=" h-100 ">      
+        <section id="menu-section" >
+            <h1 class="text-center mb-4">~●Cafe Menu●~</h1>
+            <div id="menu-container" class="row">
+                <div class="col-md-6">
+                    <h3>Light Meals <i class="fa-solid fa-plate-wheat"></i></h3>
+                    <ul class="list-unstyled">
+                        <li>Toasted sandwiches with salad/chips<br><strong>(beef/chicken/veg)</strong><span class="prices float-end">€15.00</span></li>
+                        <li>Smoked salmon Cream Cheese bagel<span class="prices float-end">€15.00</span></li>
+                        <li>Mini pies:<span class="prices float-end">€12.00</span></li>
+                        <li>Avo on toast with spicy<br>omlette<span class="prices float-end">€17.00</span></li>
+                        <li>Eggs benedict <br>on english muffin<span class="prices float-end">€18.00</span></li>
+                    </ul>
+                    <h3>Bakery <i class="fa-solid fa-cookie"></i></h3>
+                    <ul class="list-unstyled">
+                        <li><strong><i>*Subject to change</i></strong></li>
+                        <li>Croissant<strong>(plain/chocolate)</strong><span class="prices float-end">€2.00</span></li>
+                        <li>Muffins<span class="prices float-end">€3.00</span></li>
+                        <li>Cakes<span class="prices float-end">€5.00</span></li>
+                        <li>Pancakes with strawberries<br> and cream<span class="prices float-end">€10.00</span></li>
+                        <li>Waffles and icecream<span class="prices float-end">€10.00</span></li>
+                        <li>French Toast with maple syrup<span class="prices float-end">€9.00</span></li>
+                    </ul>
+                </div>
+                <div class="cafemenu col-md-6">
+                    <h3>Drinks <i class="fa-solid fa-glass-water"></i></h3>
+                    <ul class="list-unstyled">
+                        <li><strong><i>*Hot</i></strong><br></li>
+                        <li>Blends available in <strong>(Strong/Medium/mild)</strong></li>
+                        <li>Cappuccino<span class="prices float-end">€3.50</span></li>
+                        <li>Mocha<span class="prices float-end">€3.50</span></li>
+                        <li>Macciato<span class="prices float-end">€2.50</span></li>
+                        <li>Americano<span class="prices float-end">€2.00</span></li>
+                        <li>Flat White<span class="prices float-end">€3.00</span></li>
+                        <li>Matcha Latte<span class="prices float-end">€3.00</span></li>
+                        <li>Hot Chocolate<span class="prices float-end">€3.00</span></li>
+                        <li>Dirty Chai<span class="prices float-end">€3.00</span></li>
+                        <li>Cafe Late<span class="prices float-end">€3.00</span></li>
+                        <li>Espresso<span class="prices float-end">€2.00</span><br></li>
+                        <li><strong><i>*Cool</i></strong><br></li>
+                        <li>Coffee Shake<span class="prices float-end">€3.00</span></li>
+                        <li>Coffee Freezo<span class="prices float-end">€5.00</span></li>
+                        <li>Water<strong>(Still/Sparkling)</strong><span class="prices float-end">€2.00</span></li>
+                        <li>Iced Coffee<span class="prices float-end">€5.00</span></li>
+                        <li>Iced Tea<span class="prices float-end">€3.00</span></li>
+                        <li>Soft drinks<span class="prices float-end">€2.00</span></li>
+                    </ul>
+                </div>
             </div>
-            <div class="cafemenu col-md-6">
-                <h3>Drinks <i class="fa-solid fa-glass-water"></i></h3>
-                <ul class="list-unstyled">
-                    <li><strong><i>*Hot</i></strong><br></li>
-                    <li>Blends available in <strong>(Strong/Medium/mild)</strong></li>
-                    <li>Cappuccino<span class="prices float-end">3.50€</span></li>
-                    <li>Mocha<span class="prices float-end">3.50€</span></li>
-                    <li>Macciato<span class="prices float-end">2.50€</span></li>
-                    <li>Americano<span class="prices float-end">2€</span></li>
-                    <li>Flat White<span class="prices float-end">3€</span></li>
-                    <li>Matcha Latte<span class="prices float-end">3€</span></li>
-                    <li>Hot Chocolate<span class="prices float-end">3€</span></li>
-                    <li>Dirty Chai<span class="prices float-end">3€</span></li>
-                    <li>Cafe Late<span class="prices float-end">3€</span></li>
-                    <li>Espresso<span class="prices float-end">2€</span><br></li>
-                    <li><strong><i>*Cool</i></strong><br></li>
-                    <li>Coffee Shake<span class="prices float-end">3€</span></li>
-                    <li>Coffee Freezo<span class="prices float-end">5€</span></li>
-                    <li>Water<strong>(Still/Sparkling)</strong><span class="prices float-end">2€</span></li>
-                    <li>Iced Coffee<span class="prices float-end">5€</span></li>
-                    <li>Iced Tea<span class="prices float-end">3€</span></li>
-                    <li>Soft drinks<span class="prices float-end">2€</span></li>
-                </ul>
+            
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Allergen Info
+            </button>
+
+            <h2 class="text-center mb-4">~~~</h2>
+        </section>
+        <div class="video-container">
+            <video id="cafemenu-video" src="media/menupage/cafe-video.mp4" aria-label="cafepage video" playsinline autoplay muted loop></video>
+        </div>
+        
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Allergen Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        List allergen info
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <h2 class="text-center mb-4">~~~</h2>
-    </section>
-    <div class="video-container">
-        <video id="cafemenu-video" src="media/menupage/cafe-video.mp4" aria-label="cafepage video" playsinline autoplay muted loop></video>
-          
-    </div>
     </div>
     <footer id="footer" class="container-fluid fixed-bottom"></footer>
 </body>

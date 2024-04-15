@@ -1,4 +1,3 @@
-
 const ourStoryImg = document.getElementById('ourstory-img');
 const overlay = document.getElementById('overlay');
 function showOverlay() {
