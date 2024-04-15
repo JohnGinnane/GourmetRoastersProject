@@ -43,7 +43,7 @@
             } 
 				else if (optionSelected === "2") { // Classes
                 // Fields to be checked and used in alert
-                var day = document.getElementById("month").value;
+                var month = document.getElementById("month").value;
                 var level = document.getElementById("level").value;
                 var name = document.getElementById("contactName").value;
                 var email = document.getElementById("contactEmail").value;
