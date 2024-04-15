@@ -148,7 +148,12 @@ footer{
     position: fixed;
 }
 
+/*class css*/
 
+.class-logo{
+    width:1.75rem;
+    height:1.75rem;
+}
 /*media queries homepage large screens*/
 @media (min-width: 992px) {
     /*home page*/
