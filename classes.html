@@ -1,253 +1,295 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Classes</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="lib/bootstrap-5.3/css/bootstrap.css">
-    <script src= "lib/bootstrap-5.3/js/bootstrap.js"></script>
-	<script src= "js/minigame.js"></script>
-    <link rel="stylesheet" href="styles/style.css" >
 
-    <!-- https://stackoverflow.com/a/76120965 -->
-    <!-- How to load header.html into each page -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classes</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="lib/bootstrap-5.3/css/bootstrap.css">
+	<script src="lib/bootstrap-5.3/js/bootstrap.js"></script>
+	<script src="js/minigame.js"></script>
+	<link rel="stylesheet" href="styles/style.css">
+
+	<!-- https://stackoverflow.com/a/76120965 -->
+	<!-- How to load header.html into each page -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<!-- Google Font Heading -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-	
+
 	<!-- Google Font Paragraph -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-	
+	<link
+		href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
+
 	<!-- Google Font Fancy -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <script>
-      $(function() {
-        $('#header').load('header.html');
-        $('#footer').load('footer.html');
-      });
-	
-    </script>
+	<script>
+		$(function () {
+			$('#header').load('header.html');
+			$('#footer').load('footer.html');
+		});
+
+	</script>
 </head>
+
+<body class="bg-light">
+
+	<div id="header" class="container-fluid "></div>
+
+	<div class="container my-4 ">
+		<h1 class="text-center">Coffee Making Classes</h1>
+		<p class="lead text-center">@ 
+			<img src="media/favicon/favicon.ico" alt="Logo" class="class-logo">Gourmet Roasters 
+		</p>
+
+		<!-- Class Information -->
+		<div class="row mt-4">
+			<!-- Beginner Class -->
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Beginner</h4>
+						<p class="card-text">Our beginner class covers the basics of coffee brewing, including:</p>
+						<ul class="list-unstyled">
+							<li>Introduction to coffee beans</li>
+							<li>Grinding and brewing techniques</li>
+							<li>Brewing methods (e.g., drip, French press)</li>
+							<li>Espresso Making</li>
+							<li>Milk Frothing</li>
+						</ul>
+						<p class="card-text">Price: €50</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Advanced Class -->
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Advanced</h4>
+						<p class="card-text">Our advanced class builds upon the basics and dives deeper into:</p>
+						<ul class="list-unstyled">
+							<li>Understanding coffee origins</li>
+							<li>Coffee art</li>
+							<li>Cupping and tasting</li>
+							<li>Espresso extraction</li>
+							<li>Roasting fundamentals</li>
+						</ul>
+						<p class="card-text">Price: €100</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Class Schedule -->
+		<div class="mt-4">
+			<h3 class="text-center">2024 Class Schedule</h3>
+			<p class="text-center">Check out our upcoming classes:</p>
+			<p class="text-center">Due to high demand and limited spaces, we only accept bookings two months in advance</p>
+
+			<table class="table table-bordered">
+				<thead class="table-dark">
+					<tr>
+						<th>Date</th>
+						<th>Class Level</th>
+						<th>Time</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- January -->
+					<tr>
+						<td>January 8th</td>
+						<td>Beginner</td>
+						<td>7:00 PM - 8:00 PM</td>
+					</tr>
+					<tr>
+						<td>January 22nd</td>
+						<td>Advanced</td>
+						<td>6:30 PM - 8:00 PM</td>
+					</tr>
+					<!-- February -->
+					<tr>
+						<td>February 12th</td>
+						<td>Advanced</td>
+						<td>6:30 PM - 8:00 PM</td>
+					</tr>
+					<tr>
+						<td>February 26th</td>
+						<td>Beginner</td>
+						<td>7:00 PM - 8:00 PM</td>
+					</tr>
+					<!-- March -->
+					<tr>
+						<td>March 18th</td>
+						<td>Beginner</td>
+						<td>7:00 PM - 8:00 PM</td>
+					</tr>
+					<tr>
+						<td>March 31st</td>
+						<td>Advanced</td>
+						<td>6:30 PM - 8:00 PM</td>
+					</tr>
+					<!-- April -->
+					<tr>
+						<td>April 15th</td>
+						<td>Advanced</td>
+						<td>6:30 PM - 8:00 PM</td>
+					</tr>
+					<tr>
+						<td>April 29th</td>
+						<td>Beginner</td>
+						<td>6:30 PM - 7:30 PM</td>
+					</tr>
+					<!-- May -->
+					<tr>
+						<td>May 13th</td>
+						<td>Beginner</td>
+						<td>6:30 PM - 7:30 PM</td>
+					</tr>
+					<tr>
+						<td>May 27th</td>
+						<td>Advanced</td>
+						<td>6:30 PM - 8:00 PM</td>
+					</tr>
+					<!-- June -->
+					<tr>
+						<td>June 17th</td>
+						<td>Advanced</td>
+						<td>6:30 PM - 8:00 PM</td>
+					</tr>
+					<tr>
+						<td>June 30th</td>
+						<td>Beginner</td>
+						<td>6:30 PM - 7:30 PM</td>
+					</tr>
+					<!-- July -->
+					<tr>
+						<td>July 15th</td>
+						<td>Beginner</td>
+						<td>6:30 PM - 7:30 PM</td>
+					</tr>
+					<tr>
+						<td>July 29th</td>
+						<td>Advanced</td>
+						<td>6:30 PM - 8:00 PM</td>
+					</tr>
+					<!-- August -->
+					<tr>
+						<td>August 12th</td>
+						<td>Advanced</td>
+						<td>6:30 PM - 8:00 PM</td>
+					</tr>
+					<tr>
+						<td>August 26th</td>
+						<td>Beginner</td>
+						<td>6:30 PM - 7:30 PM</td>
+					</tr>
+					<!-- September -->
+					<tr>
+						<td>September 16th</td>
+						<td>Beginner</td>
+						<td>6:30 PM - 7:30 PM</td>
+					</tr>
+					<tr>
+						<td>September 30th</td>
+						<td>Advanced</td>
+						<td>6:30 PM - 8:00 PM</td>
+					</tr>
+					<!-- October -->
+					<tr>
+						<td>October 14th</td>
+						<td>Advanced</td>
+						<td>6:30 PM - 8:00 PM</td>
+					</tr>
+					<tr>
+						<td>October 28th</td>
+						<td>Beginner</td>
+						<td>6:30 PM - 7:30 PM</td>
+					</tr>
+					<!-- November -->
+					<tr>
+						<td>November 11th</td>
+						<td>Beginner</td>
+						<td>6:30 PM - 7:30 PM</td>
+					</tr>
+					<tr>
+						<td>November 25th</td>
+						<td>Advanced</td>
+						<td>6:30 PM - 8:00 PM</td>
+					</tr>
+					<!-- December -->
+					<tr>
+						<td>December 9th</td>
+						<td>Advanced</td>
+						<td>6:30 PM - 8:00 PM</td>
+					</tr>
+					<tr>
+						<td>December 15th</td>
+						<td>Beginner</td>
+						<td>6:30 PM - 7:30 PM</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+		<!-- Mini Game -->
+		<div class="row justify-content-center mt-4">
+			<div class="col-md-6">
+				<div class="card my-2">
+					<div class="card-body d-flex flex-column align-items-center">
+						<h3 class=" card-title text-center"><img src="media/favicon/favicon.ico" alt="Logo" class="class-logo"> Mini Game
+						</h3>
+						<p class=" card-text text-center">Answer the following questions correctly and receive 10% off any class of
+							your choosing!!</p>
+
+						<button class="btn project-btn mt-auto" data-bs-toggle="modal" data-bs-target="#gameModal"
+							onclick="startGame()">Start Game</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
-<body>
 
-	<div id="header" class="container-fluid"></div>
-		<h1> Classes </h1>
-		<div class="container mt-4">
-        <h2>Coffee Making Classes</h2>
-        <p>Here at Gourmet Coffee Roasters </p>
 
-        <!-- Class Information -->
-					<div class="row mt-4">
-						<!-- Beginner Class -->
+	<div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="gameModalLabel">
+						<img src="media/favicon/favicon.ico" alt="Logo" class="class-logo">
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row justify-content-center mt-4">
 						<div class="col-md-6">
-							<h4>Beginner</h4>
-							<p>Our beginner class covers the basics of coffee brewing, including:</p>
-							<ul>
-								<li>Introduction to coffee beans</li>
-								<li>Grinding and brewing techniques</li>
-								<li>Brewing methods (e.g., drip, French press)</li>
-								<li>Espresso Making</li>
-								<li>Milk Frothing</li>
-							</ul>
-							<p>Price: €50</p>
-						</div>
-						
-						<!-- Advanced Class -->
-						<div class="col-md-6">
-							<h4>Advanced</h4>
-							<p>Our advanced class builds upon the basics and dives deeper into:</p>
-							<ul>
-								<li>Understanding coffee origins</li>
-								<li>Coffee art</li>
-								<li>Cupping and tasting</li>
-								<li>Espresso extraction</li>
-								<li>Roasting fundamentals</li>
-								
-							</ul>
-							<p>Price: €100</p>
-						</div>
-					</div>
 
-        <!-- Class Schedule -->
-        <div class="mt-4">
-            <h3>2024 Class Schedule</h3>
-            <p>Check out our upcoming classes:</p>
-		    <p>Due to high demand and limited spaces, we only accept bookings two months in advance</p>
-            <table class="table">
-					<table class="table">
-					<thead>
-						<tr>
-							<th>Date</th>
-							<th>Class Level</th>
-							<th>Time</th>
-						</tr>
-					</thead>
-					<tbody>
-						<!-- January -->
-						<tr>
-							<td>January 8th</td>
-							<td>Beginner</td>
-							<td>7:00 PM - 8:00 PM</td>
-						</tr>
-						<tr>
-							<td>January 22nd</td>
-							<td>Advanced</td>
-							<td>6:30 PM - 8:00 PM</td>
-						</tr>
-						<!-- February -->
-						<tr>
-							<td>February 12th</td>
-							<td>Advanced</td>
-							<td>6:30 PM - 8:00 PM</td>
-						</tr>
-						<tr>
-							<td>February 26th</td>
-							<td>Beginner</td>
-							<td>7:00 PM - 8:00 PM</td>
-						</tr>
-						<!-- March -->
-						<tr>
-							<td>March 18th</td>
-							<td>Beginner</td>
-							<td>7:00 PM - 8:00 PM</td>
-						</tr>
-						<tr>
-							<td>March 31st</td>
-							<td>Advanced</td>
-							<td>6:30 PM - 8:00 PM</td>
-						</tr>
-						<!-- April -->
-						<tr>
-							<td>April 15th</td>
-							<td>Advanced</td>
-							<td>6:30 PM - 8:00 PM</td>
-						</tr>
-						<tr>
-							<td>April 29th</td>
-							<td>Beginner</td>
-							<td>6:30 PM - 7:30 PM</td>
-						</tr>
-						<!-- May -->
-						<tr>
-							<td>May 13th</td>
-							<td>Beginner</td>
-							<td>6:30 PM - 7:30 PM</td>
-						</tr>
-						<tr>
-							<td>May 27th</td>
-							<td>Advanced</td>
-							<td>6:30 PM - 8:00 PM</td>
-						</tr>
-						<!-- June -->
-						<tr>
-							<td>June 17th</td>
-							<td>Advanced</td>
-							<td>6:30 PM - 8:00 PM</td>
-						</tr>
-						<tr>
-							<td>June 30th</td>
-							<td>Beginner</td>
-							<td>6:30 PM - 7:30 PM</td>
-						</tr>
-						<!-- July -->
-						<tr>
-							<td>July 15th</td>
-							<td>Beginner</td>
-							<td>6:30 PM - 7:30 PM</td>
-						</tr>
-						<tr>
-							<td>July 29th</td>
-							<td>Advanced</td>
-							<td>6:30 PM - 8:00 PM</td>
-						</tr>
-						<!-- August -->
-						<tr>
-							<td>August 12th</td>
-							<td>Advanced</td>
-							<td>6:30 PM - 8:00 PM</td>
-						</tr>
-						<tr>
-							<td>August 26th</td>
-							<td>Beginner</td>
-							<td>6:30 PM - 7:30 PM</td>
-						</tr>
-						<!-- September -->
-						<tr>
-							<td>September 16th</td>
-							<td>Beginner</td>
-							<td>6:30 PM - 7:30 PM</td>
-						</tr>
-						<tr>
-							<td>September 30th</td>
-							<td>Advanced</td>
-							<td>6:30 PM - 8:00 PM</td>
-						</tr>
-						<!-- October -->
-						<tr>
-							<td>October 14th</td>
-							<td>Advanced</td>
-							<td>6:30 PM - 8:00 PM</td>
-						</tr>
-						<tr>
-							<td>October 28th</td>
-							<td>Beginner</td>
-							<td>6:30 PM - 7:30 PM</td>
-						</tr>
-						<!-- November -->
-						<tr>
-							<td>November 11th</td>
-							<td>Beginner</td>
-							<td>6:30 PM - 7:30 PM</td>
-						</tr>
-						<tr>
-							<td>November 25th</td>
-							<td>Advanced</td>
-							<td>6:30 PM - 8:00 PM</td>
-						</tr>
-						<!-- December -->
-						<tr>
-							<td>December 9th</td>
-							<td>Advanced</td>
-							<td>6:30 PM - 8:00 PM</td>
-						</tr>
-						<tr>
-							<td>December 15th</td>
-							<td>Beginner</td>
-							<td>6:30 PM - 7:30 PM</td>
-						</tr>
-
-					</tbody>
-				</table>
-						
-					</div>
-				<!-- Mini Game -->
-					   <div class="row justify-content-center mt-4">
-							<div class="col-md-6">
-								<h3 class="text-center">Mini Game</h3>
-								<p class="text-center">Answer the following questions correctly and receive 10% off any class of your choosing!!</p>
-								<button class="btn btn-primary btn-block" onclick="startGame()">Start Game</button>
-								<div id="gameQuestions" style="display: none;">
-									<p id="question1">What country inspired us to open our Cafe??</p>
-									<input type="text" id="answer1" class="form-control" required>
-									<p id="question2">Do we open on Sundays?</p>
-									<input type="text" id="answer2" class="form-control" required>
-									<p id="question3">What country is the biggest producer of coffee in the world?</p>
-									<input type="text" id="answer3" class="form-control" required>
-									<button class="btn btn-success mt-2 btn-block" onclick="checkAnswers()">Submit Answers</button>
-								</div>
-								<p id="gameResult" class="mt-3 text-center"></p>
+							<div id="gameQuestions" style="display: none;">
+								<p id="question1">What country inspired us to open our Cafe??</p>
+								<input type="text" id="answer1" class="form-control" required>
+								<p id="question2">Do we open on Sundays?</p>
+								<input type="text" id="answer2" class="form-control" required>
+								<p id="question3">What country is the biggest producer of coffee in the world?</p>
+								<input type="text" id="answer3" class="form-control" required>
+								<button class="btn btn-success mt-2 btn-block" onclick="checkAnswers()">Submit Answers</button>
 							</div>
+							<p id="gameResult" class="mt-3 text-center"></p>
 						</div>
 					</div>
-	<footer id="footer" class="container-fluid fixed-bottom"></footer>
-	
-</body>	
+				</div>
+
+			</div>
+		</div>
+	</div>
+  <footer id="footer" class="container-fluid fixed-bottom"></footer>
+</body>
+
 </html>
