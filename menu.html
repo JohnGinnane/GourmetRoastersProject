@@ -31,21 +31,65 @@
                 <div class="col-md-6">
                     <h3>Light Meals <i class="fa-solid fa-plate-wheat"></i></h3>
                     <ul class="list-unstyled">
-                        <li>Toasted sandwiches with salad/chips<br><strong>(beef/chicken/veg)</strong><span class="prices float-end">€15.00</span></li>
-                        <li>Smoked salmon Cream Cheese bagel<span class="prices float-end">€15.00</span></li>
-                        <li>Mini pies:<span class="prices float-end">€12.00</span></li>
-                        <li>Avo on toast with spicy<br>omlette<span class="prices float-end">€17.00</span></li>
-                        <li>Eggs benedict <br>on english muffin<span class="prices float-end">€18.00</span></li>
+                        <li>
+                            Toasted sandwiches with salad/chips<br><strong>(beef/chicken/veg)</strong><sup class="sup-allergen">(4, 5, 7, 2)</sup>
+                            <span class="prices float-end">€15.00</span>
+                        </li>
+
+                        <li>
+                            Smoked salmon<br> Cream Cheese bagel<sup class="sup-allergen">(1, 3, 5)</sup>
+                            <span class="prices float-end">€15.00</span>
+                        </li>
+
+                        <li>
+                            Mini pies<sup class="sup-allergen">(1, 5, 6)</sup>
+                            <span class="prices float-end">€12.00</span>
+                        </li>
+
+                        <li>
+                            Avo on toast with spicy omelette<sup class="sup-allergen">(1, 4, 5, 6)</sup>
+                            <span class="prices float-end">€17.00</span>
+                        </li>
+
+                        <li>
+                            Eggs benedict on english muffin<sup class="sup-allergen">(1, 4, 5, 6)</sup>
+                            <span class="prices float-end">€18.00</span>
+                        </li>
                     </ul>
+
                     <h3>Bakery <i class="fa-solid fa-cookie"></i></h3>
+                    
                     <ul class="list-unstyled">
                         <li><strong><i>*Subject to change</i></strong></li>
-                        <li>Croissant<strong>(plain/chocolate)</strong><span class="prices float-end">€2.00</span></li>
-                        <li>Muffins<span class="prices float-end">€3.00</span></li>
-                        <li>Cakes<span class="prices float-end">€5.00</span></li>
-                        <li>Pancakes with strawberries<br> and cream<span class="prices float-end">€10.00</span></li>
-                        <li>Waffles and icecream<span class="prices float-end">€10.00</span></li>
-                        <li>French Toast with maple syrup<span class="prices float-end">€9.00</span></li>
+                        <li>
+                            Croissant<strong> (plain/chocolate)</strong><sup class="sup-allergen">(1, 5, 6)</sup>
+                            <span class="prices float-end">€2.00</span>
+                        </li>
+
+                        <li>
+                            Muffins<sup class="sup-allergen">(1, 5, 6)</sup>
+                            <span class="prices float-end">€3.00</span>
+                        </li>
+
+                        <li>
+                            Cakes<sup class="sup-allergen">(1, 5, 6)</sup>
+                            <span class="prices float-end">€5.00</span>
+                        </li>
+
+                        <li>
+                            Pancakes with strawberries<br> and cream<sup class="sup-allergen">(1, 5, 6)</sup>
+                            <span class="prices float-end">€10.00</span>
+                        </li>
+
+                        <li>
+                            Waffles and icecream<sup class="sup-allergen">(1, 5, 6)</sup>
+                            <span class="prices float-end">€10.00</span>
+                        </li>
+
+                        <li>
+                            French Toast with<br> maple syrup<sup class="sup-allergen">(1, 5, 6)</sup>
+                            <span class="prices float-end">€9.00</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="cafemenu col-md-6">
@@ -66,7 +110,7 @@
                         <li><strong><i>*Cool</i></strong><br></li>
                         <li>Coffee Shake<span class="prices float-end">€3.00</span></li>
                         <li>Coffee Freezo<span class="prices float-end">€5.00</span></li>
-                        <li>Water<strong>(Still/Sparkling)</strong><span class="prices float-end">€2.00</span></li>
+                        <li>Water <strong>(Still/Sparkling)</strong><span class="prices float-end">€2.00</span></li>
                         <li>Iced Coffee<span class="prices float-end">€5.00</span></li>
                         <li>Iced Tea<span class="prices float-end">€3.00</span></li>
                         <li>Soft drinks<span class="prices float-end">€2.00</span></li>
@@ -75,7 +119,7 @@
             </div>
             
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-secondary" onclick="openModalAndHighlight()">
                 Allergen Info
             </button>
 
@@ -87,7 +131,7 @@
         
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modal-allergen-info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -95,7 +139,14 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        List allergen info
+                        <div id="div-allergen-1" class="div-allergen row"><span>1. Dairy</span></div>
+                        <div id="div-allergen-2" class="div-allergen row"><span>2. Meat</span></div>
+                        <div id="div-allergen-3" class="div-allergen row"><span>3. Fish</span></div>
+                        <div id="div-allergen-4" class="div-allergen row"><span>4. Nuts</span></div>
+                        <div id="div-allergen-5" class="div-allergen row"><span>5. Wheat</span></div>
+                        <div id="div-allergen-6" class="div-allergen row"><span>6. Eggs</span></div>
+                        <div id="div-allergen-7" class="div-allergen row"><span>7. Beef</span></div>
+                        <div id="div-allergen-8" class="div-allergen row"><span>8. Pork</span></div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
