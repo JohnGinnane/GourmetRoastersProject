@@ -328,6 +328,10 @@ headings {
 
 }
 
+.sup-allergen {
+    cursor: pointer;
+}
+
 .button-allergen-info {
     width: 120px;
 }
