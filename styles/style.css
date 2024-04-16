@@ -4,15 +4,28 @@ body {
 }
 
 /* About us CSS */
-@media (max-width: 768px) {
+
+.about-us-img {
+    height: calc(25vw);
+    object-position: center 35%;
+    overflow: hidden;
+    width: calc(100vw);
+    object-fit: cover;
+}
+
+
+@media(min-width: 769px) {
     .about-us-img {
-        height: calc(25vw);
-        object-position: 0px 0px;
-        overflow: hidden;
-        width: calc(100vw);
+        height:500px;
         object-fit: cover;
+        object-position: center;
     }
 }
+/* .about-us-img {
+    height:500px;
+    object-fit: cover;
+    object-position: center;
+} */
 
 .pop-quiz-questions {
     margin-bottom: 15px;
@@ -242,6 +255,12 @@ footer{
         display: none;
     }
     
+    .about-us-img {
+        height:350px;
+        object-fit: cover;
+        object-position: center;
+    }
+
 }
 
 .paragraphs {
