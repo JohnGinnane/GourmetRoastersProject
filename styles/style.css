@@ -3,6 +3,10 @@ body {
     padding-bottom: 110px;
 }
 
+.scroll-to-top{
+    display:flex;
+}
+
 /* About us CSS */
 
 .about-us-img {
@@ -20,6 +24,8 @@ body {
         object-fit: cover;
         object-position: center;
     }
+
+    
 }
 /* .about-us-img {
     height:500px;
@@ -259,6 +265,10 @@ footer{
         height:350px;
         object-fit: cover;
         object-position: center;
+    }
+
+    .scroll-to-top{
+        display:none;
     }
 
 }
