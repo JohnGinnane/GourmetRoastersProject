@@ -17,8 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
             createBean(e.clientX - 16, e.clientY - 16);
         }
 
-        if (x >= 255) { x = 0; }
-        
         out = '';
         
     });
