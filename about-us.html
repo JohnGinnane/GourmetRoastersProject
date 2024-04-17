@@ -11,6 +11,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="media/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="lib/bootstrap-5.3/css/bootstrap.css">
+    <script src= "lib/bootstrap-5.3/js/bootstrap.js"></script>
     
     <link rel="stylesheet" href="styles/style.css" >
 
@@ -28,6 +29,7 @@
       });
     </script>
   </head>
+
   <body>
     <div id="header" class="container-fluid"></div>
     <div id="body" class="container our-story-container my-5 py-3">
@@ -49,15 +51,10 @@
             </p>
           </div>
           <div class="col-md-5 col-12 order-1 order-md-2 d-flex justify-content-center align-items-center">            
-            <a href="media/homepage/beans-hands.webp"
-               data-toggle="lightbox"
-               data-caption="Our freshly extracted coffee beans">
-              <img class="img-fluid mx-auto float-end about-us-img"
-                   
+            <img class="img-fluid mx-auto float-end about-us-img"                   
                    role="img"
                    alt="Our freshly extracted coffee beans in hands"
                    src="media/homepage/beans-hands.webp">
-            </a>
           </div>
           </a>
         </div>
@@ -65,15 +62,10 @@
         <!-- Part 2-->
         <div class="row featurette g-0">
           <div class="col-md-5 order-1 px-0 py-0 d-flex justify-content-center align-items-center" >
-            <a href="media/homepage/coffee-roasting.webp"
-               data-toggle="lightbox"
-               data-caption="High quality beans being hand roasted in a pan">
-              <img class="featurette-image img-fluid mx-auto float-start about-us-img"
-                   
-                   role="img"
-                   alt="Beans being roasted in a pan"
-                   src="media/homepage/coffee-roasting.webp">
-            </a>
+            <img class="featurette-image img-fluid mx-auto float-start about-us-img"                   
+                 role="img"
+                 alt="Beans being roasted in a pan"
+                 src="media/homepage/coffee-roasting.webp">
           </div>
           <div class="col-md-7 order-2">
             <h2 class="featurette-header fw-normal lh-1 px-2 py-2">
@@ -109,15 +101,10 @@
             </p>
           </div>
           <div class="col-md-5 order-1 order-md-2 d-flex justify-content-center align-items-center">            
-            <a href="media/homepage/coffee-brewing.webp"
-               data-toggle="lightbox"
-               data-caption="Hot cup of espresso in a cup">
-              <img class="featurette-image img-fluid mx-auto float-start about-us-img"
-                  
-                   role="img"
-                   alt="Hot cup of espresso in a cup"
-                   src="media/homepage/coffee-brewing.webp">                   
-            </a>
+            <img class="featurette-image img-fluid mx-auto float-start about-us-img"                  
+                 role="img"
+                 alt="Hot cup of espresso in a cup"
+                 src="media/homepage/coffee-brewing.webp"> 
           </div>
         </div>
 
@@ -241,17 +228,52 @@
           </div>
         </div>
       </div>
+
+    <!-- Quiz Result Modal -->
+    <div class="modal fade" id="modal-about-us-quiz-result" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content align-items-center">
+              <!-- <div class="modal-header" style="height: 10px;">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <table style="height: 100px; width: 100%;">
+                    <tbody>
+                      <tr>
+                        <td id="td-quiz-result" class="text-center align-middle display-6"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div> -->
+
+              <div class="modal-body" id="div-coffee-cup-modal-body">
+                <div class="div-coffee-cup">
+                  <div class="div-coffee-cup-top">            
+                  </div>
+                  <div class="div-coffee-cup-label">
+                    <div class="div-coffee-cup-label-interior">
+                      <!-- <span class="span-coffee-cup-label">You scored 0 / 4!<br>Better luck next time</span> -->
+                      <span id="span-coffee-cup-label">You scored 0 / 4!<br>Good try</span>
+                    </div>
+                  </div>
+                  
+                  <div class="div-coffee-cup-interior">
+                    <div class="modal-header" style="height: 10px;">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
+
     <div class="position-fixed bottom-50 end-0 ">
       <a class="btn fw-bold scroll-to-top" href="about-us.html" aria-label="homepage link">
           <i class="bi bi-arrow-up-circle "></i>
       </a>
     </div>
     <footer id="footer" class="container-fluid fixed-bottom"></footer>
-    
-    <!-- Bootstrap -->
-    <script src= "lib/bootstrap-5.3/js/bootstrap.js"></script>
-    <!-- Lightbox -->
-    <script src="lib/bs5-lightbox/index.bundle.min.js"></script>
   </body>
 </html>
