@@ -39,125 +39,126 @@
 	
 <body class="bg-light" id="contact-page" >
 	<div id="header" class="container-fluid"></div>
-	<div class="container container d-flex justify-content-center  my-4">
-		<div class="col-md-6">
-			<div class="card">
-				<div class="card-body">
-					<h1 class ="headings mb-4 text-center">Have any Questions? </h1>
-					<h2 class ="headings mb-4 text-center fs-5">Please use our contact form below. <i class="bi bi-send"></i></h2>
-					<form id="contactForm" class="needs-validation d-flex flex-column" onsubmit="Contact(); return false;" novalidate>
-						<div class="form-group">
-							<label for="option">Please choose what you would like to hear more about:</label>
-							<select class="form-control" id="option" onchange="showOptions()">
-									<option value="">Select</option>
-									<option value="1">Careers</option>
-									<option value="2">Classes</option>
-									<option value="3">Other</option>
-							select>                   
-						</div>
-						<br>
-						<div id="classesSection" class="was-validated">
-							<div class="form-group">
-								<label for="contactName">Please fill in your name:</label>
-								<input type="text" class="form-control" id="contactName" name="contactName" placeholder="Enter your name here" required>
-								<div class="invalid-feedback">Please enter your name.</div>
+			<div class="container container d-flex justify-content-center  my-4">
+				
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-body">
+							<h1 class ="headings mb-4 text-center">Have any Questions? </h1>
+							<h2 class ="headings mb-4 text-center fs-5">Please use our contact form below. <i class="bi bi-send"></i></h2>
+							<form id="contactForm" class="needs-validation d-flex flex-column" onsubmit="Contact(); return false;" novalidate>
+								<div class="form-group">
+									<label for="option">Please choose what you would like to hear more about:</label>
+									<select class="form-control" id="option" onchange="showOptions()">
+										<option value="">Select</option>
+										<option value="1">Careers</option>
+										<option value="2">Classes</option>
+										<option value="3">Other</option>
+									</select>                   
 							</div>
-							<div class="form-group">
-								<label for="contactEmail">Please fill in your email:</label>
-								<input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="Enter your email here" required>
-								<div class="invalid-feedback">Please enter a valid email address.</div>
+							<br>
+								<div id="classesSection" class="was-validated">
+								<div class="form-group">
+									<label for="contactName">Please fill in your name:</label>
+									<input type="text" class="form-control" id="contactName" name="contactName" placeholder="Enter your name here" required>
+									<div class="invalid-feedback">Please enter your name.</div>
+								</div>
+								<div class="form-group">
+									<label for="contactEmail">Please fill in your email:</label>
+									<input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="Enter your email here" required>
+									<div class="invalid-feedback">Please enter a valid email address.</div>
+								</div>
+								<div class="form-group">
+									<label for="day">Choose which month you would like to enrol in:</label>
+									<select class="form-control" id="month" name="month" required>
+										<option value="">Select</option>
+										<option value="January">January</option>
+										<option value="February">February</option>
+										<option value="March">March</option>
+										<option value="April">April</option>
+										<option value="May">May</option>
+										<option value="June">June</option>
+										<option value="July">July</option>
+										<option value="August">August</option>
+										<option value="September">September</option>
+										<option value="October">October</option>
+										<option value="November">November</option>
+										<option value="December">December</option>
+									</select>
+									<div class="invalid-feedback">Please select a month.</div>
+								</div>
+								<div class="form-group">
+									<label for="level">Choose the class level you would like to partake in:</label>
+									<select class="form-control" id="level" name="level" required>
+										<option value="">Select</option>
+										<option value="beginner level">Beginner</option>
+										<option value="advanced level">Advanced</option>
+									</select>
+									<div class="invalid-feedback">Please select a class level.</div>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="discountCode" name="discountCode" placeholder="Enter your discount code here">
+								</div>
 							</div>
-							<div class="form-group">
-								<label for="day">Choose which month you would like to enrol in:</label>
-								<select class="form-control" id="month" name="month" required>
-									<option value="">Select</option>
-									<option value="January">January</option>
-									<option value="February">February</option>
-									<option value="March">March</option>
-									<option value="April">April</option>
-									<option value="May">May</option>
-									<option value="June">June</option>
-									<option value="July">July</option>
-									<option value="August">August</option>
-									<option value="September">September</option>
-									<option value="October">October</option>
-									<option value="November">November</option>
-									<option value="December">December</option>
-								</select>
-								<div class="invalid-feedback">Please select a month.</div>
+							<div id="careersSection" class="was-validated">
+								<div class="form-group">
+									<label for="careerName">Please fill in your name:</label>
+									<input type="text" class="form-control" id="careerName" name="careerName" placeholder="Enter your name here" required>
+									<div class="invalid-feedback">Please enter your name.</div>
+								</div>
+								<div class="form-group">
+									<label for="careerEmail">Please fill in your email:</label>
+									<input type="email" class="form-control" id="careerEmail" name="careerEmail" placeholder="Enter your email here" required>
+									<div class="invalid-feedback">Please enter a valid email address.</div>
+								</div>
+								<div class="form-group">
+									<label for="availability">Availability:</label>
+									<select class="form-control" id="availability" name="availability" required>
+										<option value="">Select</option>
+										<option value="full-time">Full-time</option>
+										<option value="part-time">Part-time</option>
+									</select>
+									<div class="invalid-feedback">Please select your availability.</div>
+								</div>
+								<div class="form-group">
+									<label for="role">Role:</label>
+									<select class="form-control" id="role" name="role" required>
+										<option value="">Select</option>
+										<option value="barista">Barista</option>
+										<option value="server">Server</option>
+									</select>
+									<div class="invalid-feedback">Please select a role.</div>
+								</div>
 							</div>
-							<div class="form-group">
-								<label for="level">Choose the class level you would like to partake in:</label>
-								<select class="form-control" id="level" name="level" required>
-									<option value="">Select</option>
-									<option value="beginner level">Beginner</option>
-									<option value="advanced level">Advanced</option>
-								</select>
-								<div class="invalid-feedback">Please select a class level.</div>
+							<div id="otherSection" class="was-validated">
+								<div class="form-group">
+									<label for="otherName">Please fill in your name:</label>
+									<input type="text" class="form-control" id="otherName" name="otherName" placeholder="Enter your name here" required>
+									<div class="invalid-feedback">Please enter your name.</div>
+								</div>
+								<div class="form-group">
+									<label for="otherEmail">Please fill in your email:</label>
+									<input type="email" class="form-control" id="otherEmail" name="otherEmail" placeholder="Enter your email here" required>
+									<div class="invalid-feedback">Please enter a valid email address.</div>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="other" name="other" placeholder="Type your question here" required>
+									<div class="invalid-feedback">Please enter your question.</div>
+								</div>
 							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="discountCode" name="discountCode" placeholder="Enter your discount code here">
-							</div>
-						</div>
-						<div id="careersSection" class="was-validated">
-							<div class="form-group">
-								<label for="careerName">Please fill in your name:</label>
-								<input type="text" class="form-control" id="careerName" name="careerName" placeholder="Enter your name here" required>
-								<div class="invalid-feedback">Please enter your name.</div>
-							</div>
-							<div class="form-group">
-								<label for="careerEmail">Please fill in your email:</label>
-								<input type="email" class="form-control" id="careerEmail" name="careerEmail" placeholder="Enter your email here" required>
-								<div class="invalid-feedback">Please enter a valid email address.</div>
-							</div>
-							<div class="form-group">
-								<label for="availability">Availability:</label>
-								<select class="form-control" id="availability" name="availability" required>
-									<option value="">Select</option>
-									<option value="full-time">Full-time</option>
-									<option value="part-time">Part-time</option>
-								</select>
-								<div class="invalid-feedback">Please select your availability.</div>
-							</div>
-							<div class="form-group">
-								<label for="role">Role:</label>
-								<select class="form-control" id="role" name="role" required>
-									<option value="">Select</option>
-									<option value="barista">Barista</option>
-									<option value="server">Server</option>
-								</select>
-								<div class="invalid-feedback">Please select a role.</div>
-							</div>
-						</div>
-						<div id="otherSection" class="was-validated">
-							<div class="form-group">
-								<label for="otherName">Please fill in your name:</label>
-								<input type="text" class="form-control" id="otherName" name="otherName" placeholder="Enter your name here" required>
-								<div class="invalid-feedback">Please enter your name.</div>
-							</div>
-							<div class="form-group">
-								<label for="otherEmail">Please fill in your email:</label>
-								<input type="email" class="form-control" id="otherEmail" name="otherEmail" placeholder="Enter your email here" required>
-								<div class="invalid-feedback">Please enter a valid email address.</div>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="other" name="other" placeholder="Type your question here" required>
-								<div class="invalid-feedback">Please enter your question.</div>
-							</div>
-						</div>
-						<div class="text-center mb-4">
-							<button type="submit" class="btn project-btn">Submit</button>
-						</div>
-					</form>
+							<div class="text-center mb-4">
+							    <button type="submit" class="btn project-btn">Submit</button>
+						  </div>
+						</form>
+					</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="position-fixed bottom-50 end-0 ">
-		<a class="btn fw-bold scroll-to-top" href="contact-us.html"  aria-label="homepage link">
-				<i class="bi bi-arrow-up-circle "></i>
-		</a>
-	</div>
+			<div class="position-fixed bottom-50 end-0 ">
+				<a class="btn fw-bold scroll-to-top" href="contact-us.html"  aria-label="homepage link">
+						<i class="bi bi-arrow-up-circle "></i>
+				</a>
+			</div>
 	<footer id="footer" class="container-fluid fixed-bottom"></footer>
 </body>
 </html>
