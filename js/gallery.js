@@ -1,5 +1,5 @@
 let beans = [];
-const rate = 50;
+const rate = 100;
 const maxlife = 500;
 // Use pooling to improve performance
 const maxBeans = 50;
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
         if (x >= rate){
             x = 0;
-            createBean(e.pageX - 32, e.pageY - 100);
+            createBean(e.clientX - 16, e.clientY - 16);
         }
 
         if (x >= 255) { x = 0; }
@@ -117,5 +117,5 @@ function update(){
         }
     }
     
-    $("#background").html(out);
+    $("#gallery-bean-background").html(out);
 }

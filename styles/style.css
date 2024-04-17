@@ -219,7 +219,7 @@ footer{
 .carousal-text p{
     font-size: 1.5rem;
     font-style: italic;
-    text-shadow: 0.1rem 0.1rem 0.2rem rgba(62, 39, 35,);
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(62, 39, 35);
 }
 .project-btn{
     color:#F5F5F5;
@@ -314,6 +314,20 @@ a.spotlight {
     display: flex;
     justify-items: center;
     align-items: center;
+}
+
+#gallery-bean-background {
+    pointer-events: none;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
 }
 
 /*class css*/
