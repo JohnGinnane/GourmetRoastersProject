@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
     $("#body").mousemove(function (e) {
         x += delta;
             
-        if (x % rate == 0 && x != 0){
+        if (x >= rate){
+            x = 0;
             createBean(e.pageX - 32, e.pageY - 100);
         }
 
