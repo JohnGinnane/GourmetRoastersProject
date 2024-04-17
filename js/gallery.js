@@ -5,11 +5,12 @@ const maxlife = 500;
 const maxBeans = 50;
 let x = 0;
 let lastTime = new Date();
+let delta = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
     // Have little coffee beans fall down as the mouse moves
     $("#body").mousemove(function (e) {
-        x++;
+        x += delta;
             
         if (x % rate == 0 && x != 0){
             createBean(e.pageX - 32, e.pageY - 100);
@@ -85,7 +86,7 @@ function randomNumber(min, max) {
 function update(){
     // Need to get the time since the last update
     // to make physics consistent across machines
-    let delta = new Date() - lastTime;
+    delta = new Date() - lastTime;
     lastTime = new Date();
 
     let out = '';
