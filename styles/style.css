@@ -7,6 +7,8 @@ body {
     display:flex;
 }
 
+
+
 /* About us CSS */
 
 .about-us-img {
@@ -24,6 +26,11 @@ body {
         object-fit: cover;
         object-position: center;
     }
+
+    #tag-line{
+        font-size: 1rem !important;
+    }
+    
 
     
 }
@@ -114,6 +121,10 @@ footer{
     background-color: #F5F5F5;
 }
 
+#tag-line{
+    font-size: 0.75rem;
+}
+
 /*home page css*/
 /*carousal*/
 .carousal-image {
@@ -128,14 +139,13 @@ footer{
 }
 
 .carousal-text {
-    left: 5%;
-    top:45%;
+    
     border-radius: 1rem;
     padding:1.5rem;
 }
 
 .carousal-text p{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-style: italic;
     text-shadow: 0.1rem 0.1rem 0.2rem rgba(62, 39, 35,);
 }
@@ -157,6 +167,7 @@ footer{
     border: 0.5rem solid #FFFFFF;
     border-bottom-width: 2rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
 }
 
 .our-story-container {
@@ -239,12 +250,8 @@ footer{
 /*media queries homepage large screens*/
 @media (min-width: 992px) {
     /*home page*/
-    .carousal-text {
-        left: 25%;
-        top:35%;
-        border-radius: 1rem;
-        padding:1.5rem;
-    }
+    
+    
     
     .carousal-text p{
         font-size: 2rem;
@@ -253,7 +260,7 @@ footer{
     }
     
     #ourstory-img{
-        height: 40rem;
+        height: 42rem;
     }
 	
 	/* Hide all sections initially */
