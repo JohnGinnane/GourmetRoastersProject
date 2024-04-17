@@ -27,6 +27,7 @@ body {
 
     
 }
+
 /* .about-us-img {
     height:500px;
     object-fit: cover;
@@ -57,7 +58,7 @@ body {
     height: 0;
   }
   
-  .form-check > i {
+.form-check > i {
     margin-right: 8px;
     margin-left: -20px;
     display: inline-block;
@@ -67,11 +68,11 @@ body {
     box-shadow: inset 0 0 0 16px #fff;
     border: 1px solid gray;
     background: gray;
-  }
+}
   
 .form-check > i {
-  width: 32px;
-  border-radius: 50%;
+    width: 32px;
+    border-radius: 50%;
 }
 
 .form-check:hover > i {
@@ -93,6 +94,87 @@ background-image: url("../media/favicon/favicon.ico");
 #pop-quiz-submit {
     width: 100px;
     margin: 10px
+}
+
+.div-coffee-cup {
+    border-top: 300px solid #c4ac9e;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 200px;
+    position: relative;
+}
+
+.div-coffee-cup-label {
+    border-top: 100px solid rgb(209, 209, 209);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 0;
+    width: 200px;
+    position: absolute;
+    top: -215px;
+    left: -25px;
+}
+
+.div-coffee-cup-top {
+    border-bottom: 20px solid rgb(223, 223, 223);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 0;
+    width: 210px;
+    position: absolute;
+    top: -315px;
+    left: -30px;
+}
+
+.div-coffee-cup-interior {
+    position: absolute;
+    left: 120px;
+    top: -290px;
+    border: 0px;
+}
+
+div.div-coffee-cup-interior>div.modal-header {
+    border: 0px;
+}
+
+#span-coffee-cup-label {
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+#modal-about-us-quiz-result>div.modal-dialog {
+    background-color: transparent;
+    width: 200px;
+}
+
+#modal-about-us-quiz-result>div.modal-dialog>div.modal-content {
+    background-color: transparent;
+    border: 0px;
+}
+
+#div-coffee-cup-modal-body, .btn-close {
+    background-color: transparent;
+    border: 0px;
+}
+
+.div-coffee-cup-label-interior {
+    display: flex;
+    width: 175px;
+    align-items: center;
+    position: absolute;
+    height: 90px;
+    left: 2px;
+    top: -95px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 /*footer css*/

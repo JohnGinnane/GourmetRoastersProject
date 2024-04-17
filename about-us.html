@@ -29,6 +29,7 @@
       });
     </script>
   </head>
+
   <body>
     <div id="header" class="container-fluid"></div>
     <div id="body" class="container our-story-container my-5 py-3">
@@ -227,7 +228,47 @@
           </div>
         </div>
       </div>
+
+    <!-- Quiz Result Modal -->
+    <div class="modal fade" id="modal-about-us-quiz-result" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content align-items-center">
+              <!-- <div class="modal-header" style="height: 10px;">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <table style="height: 100px; width: 100%;">
+                    <tbody>
+                      <tr>
+                        <td id="td-quiz-result" class="text-center align-middle display-6"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div> -->
+
+              <div class="modal-body" id="div-coffee-cup-modal-body">
+                <div class="div-coffee-cup">
+                  <div class="div-coffee-cup-top">            
+                  </div>
+                  <div class="div-coffee-cup-label">
+                    <div class="div-coffee-cup-label-interior">
+                      <!-- <span class="span-coffee-cup-label">You scored 0 / 4!<br>Better luck next time</span> -->
+                      <span id="span-coffee-cup-label">You scored 0 / 4!<br>Good try</span>
+                    </div>
+                  </div>
+                  
+                  <div class="div-coffee-cup-interior">
+                    <div class="modal-header" style="height: 10px;">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
+
     <div class="position-fixed bottom-50 end-0 ">
       <a class="btn fw-bold scroll-to-top" href="about-us.html" aria-label="homepage link">
           <i class="bi bi-arrow-up-circle "></i>
