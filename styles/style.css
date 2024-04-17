@@ -302,11 +302,23 @@ footer{
     position: fixed;
 }
 
+/* Gallery CSS */
+a.spotlight {
+    border: 1px solid red;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
 /*class css*/
 
 .class-logo{
     width:1.75rem;
     height:1.75rem;
+}
+
+a.spotlight>img.img-thumbnail {
+    align-items: center;
 }
 
 /*contact page*/
