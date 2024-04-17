@@ -226,6 +226,10 @@ footer{
     background-color: #C9A45A;
 }
 
+.project-btn:hover {
+    background-color: #cec4b0;
+}
+
 .carousal-btn{
     color:#F5F5F5;
     background-color: rgba(201, 164, 94, 0.7);
@@ -281,6 +285,9 @@ footer{
 }
 
 /*cafe menu css*/
+.li-center {
+    text-align: center;
+}
 
 #menu-section {
     background-color: #F5F5F5;
