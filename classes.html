@@ -32,7 +32,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 	<script>
 		$(function () {
-			$('#header').load('header.html');
+        $('#header').load('header.html', function() {
+          // After loading in the header set the appropriate navbar selection
+          let navbarItems = document.querySelectorAll("#navbarNav>ul>li>a");
+          
+          for (let navbarItem of navbarItems) {
+            if (navbarItem.innerHTML.toLowerCase() == "classes") {
+              navbarItem.style.fontWeight = "bold";
+            }
+          }
+        });
+
 			$('#footer').load('footer.html');
 		});
 

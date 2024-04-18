@@ -31,7 +31,17 @@
 	
     <script>
       $(function() {
-        $('#header').load('header.html');
+        $('#header').load('header.html', function() {
+          // After loading in the header set the appropriate navbar selection
+          let navbarItems = document.querySelectorAll("#navbarNav>ul>li>a");
+          
+          for (let navbarItem of navbarItems) {
+            if (navbarItem.innerHTML.toLowerCase() == "contact") {
+              navbarItem.style.fontWeight = "bold";
+            }
+          }
+        });
+
         $('#footer').load('footer.html');
       });
     </script>
