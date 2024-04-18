@@ -1,6 +1,13 @@
 body {
     background-color: #EFEFEF;
     padding-bottom: 110px;
+	font-family: "Open Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-variation-settings:
+    "wdth" 100;
+	font-size: 16px;
 }
 
 .scroll-to-top{
@@ -396,20 +403,39 @@ a.spotlight>img.img-thumbnail {
 
 }
 
-.paragraphs {
+/*.paragraphs {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	font-style: normal;
 	font-variation-settings:
     "wdth" 100;
 	font-size: 16px;
-}
-	
-headings {
+}*/
+
+/* Heading 	
+h1,
+h2,
+h3,
+h4,
+h5 {
 	font-family: "Abel", sans-serif;
 	font-weight: 500;
+	font-style: bold;
+}*/
+
+/* Heading */	
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Oswald", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
 	font-style: normal;
 }
+
+
 	
 .fancy {
 	font-family: "Dancing Script", cursive;
