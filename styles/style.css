@@ -167,6 +167,10 @@ div.div-coffee-cup-interior>div.modal-header {
 #modal-about-us-quiz-result>div.modal-dialog {
     background-color: transparent;
     width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #modal-about-us-quiz-result>div.modal-dialog>div.modal-content {
