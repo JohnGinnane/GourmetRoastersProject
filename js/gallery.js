@@ -1,24 +1,26 @@
 let beans = [];
-const rate = 100;
+const beanCoolDown = 100;
 const maxlife = 500;
 // Use pooling to improve performance
 const maxBeans = 50;
-let x = 0;
+
 let lastTime = new Date();
-let delta = 0;
+let lastBean = new Date();
+let beanTimer = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
     // Have little coffee beans fall down as the mouse moves
     $("#body").mousemove(function (e) {
-        x += delta;
-            
-        if (x >= rate){
-            x = 0;
+        // Find if enough time has passed since the last bean
+        let deltaBean = new Date().getTime() - lastBean.getTime();
+        lastBean = new Date();
+        beanTimer += deltaBean;
+
+        if (beanTimer > beanCoolDown) {
+            beanTimer = 0;
+            // Create the bean on the location of the cursor
             createBean(e.clientX - 16, e.clientY - 16);
         }
-
-        out = '';
-        
     });
     
     setInterval(update);
@@ -42,15 +44,20 @@ function createBean(x, y) {
         // Create a new bean
         foundBean = {};
         // Clone node and set aesthetics ONCE
+        foundBean.node = document.querySelector("svg.svg-bean").cloneNode(true);
+        foundBean.node.style.position = "absolute";
+        foundBean.node.style.display = "block";
+        foundBean.path = foundBean.node.querySelector("g>path");
+
+        // This will allow us to set the HTML each time we need to render a bean
         foundBean.html = function() {
             // Each time we call the code we need to update position
-            foundBean.node.style.top = foundBean.y + "px";
-            foundBean.node.style.left = foundBean.x + "px";
-            foundBean.node.setAttribute("transform", "rotate(" + foundBean.angle + ")");
-            return foundBean.node.outerHTML;
+            this.node.style.top = this.y + "px";
+            this.node.style.left = this.x + "px";
+            this.node.setAttribute("transform", "rotate(" + this.angle + ")");
+            return this.node.outerHTML;
         }
 
-        foundBean.node = document.querySelector("svg.svg-bean").cloneNode(true);
         beans.push(foundBean);
     }
     
@@ -69,12 +76,9 @@ function createBean(x, y) {
         foundBean.width = 24 + scale;
         foundBean.height = 24 + scale;
 
-        foundBean.node.style.position = "absolute";
-        foundBean.node.querySelector("g>path").style.fill = tinycolor("hsl(27, 100%, " + foundBean.colour + "%)");
+        foundBean.path.style.fill = tinycolor("hsl(27, 100%, " + foundBean.colour + "%)");
         foundBean.node.setAttribute("width", foundBean.width);
         foundBean.node.setAttribute("height", foundBean.height);
-        foundBean.node.style.display = "block";
-        foundBean.node.setAttribute("transform", "rotate(" + foundBean.angle + ")");
     }
 }
 
@@ -82,10 +86,10 @@ function randomNumber(min, max) {
     return Math.random() * (max - min) + min;
 }
 
-function update(){
+function update() {
     // Need to get the time since the last update
     // to make physics consistent across machines
-    delta = new Date() - lastTime;
+    delta = new Date().getTime() - lastTime.getTime();
     lastTime = new Date();
 
     let out = '';
