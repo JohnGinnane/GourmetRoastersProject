@@ -167,6 +167,10 @@ div.div-coffee-cup-interior>div.modal-header {
 #modal-about-us-quiz-result>div.modal-dialog {
     background-color: transparent;
     width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #modal-about-us-quiz-result>div.modal-dialog>div.modal-content {
@@ -204,6 +208,7 @@ footer{
 #socials a i {
     font-size: 25px;
 }
+
 /*header css*/
 .navbar{
     z-index: 2;
@@ -212,6 +217,14 @@ footer{
 
 #tag-line{
     font-size: 1rem;
+}
+
+a.nav-link {
+    text-align: center;
+    justify-content: center;
+    padding-left: 0px;
+    vertical-align: middle;
+    display: flex;
 }
 
 /*home page css*/
@@ -476,7 +489,7 @@ h5 {
 }
 
 .button-allergen-info {
-    width: 120px;
+    width: 140px;
 }
 
 #embed-maps{

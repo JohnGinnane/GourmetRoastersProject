@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cafe Menu</title>
+    
     <link rel="stylesheet" href="media/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="lib/bootstrap-5.3/css/bootstrap.css">
     <script src= "lib/bootstrap-5.3/js/bootstrap.js"></script>
@@ -33,7 +34,17 @@
 	
     <script>
       $(function() {
-        $('#header').load('header.html');
+        $('#header').load('header.html', function() {
+          // After loading in the header set the appropriate navbar selection
+          let navbarItems = document.querySelectorAll("#navbarNav>ul>li>a");
+          
+          for (let navbarItem of navbarItems) {
+            if (navbarItem.innerHTML.toLowerCase() == "cafe menu") {
+              navbarItem.style.fontWeight = "bold";
+            }
+          }
+        });
+
         $('#footer').load('footer.html');
       });
     </script>

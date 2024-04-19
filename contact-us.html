@@ -10,6 +10,9 @@
 	<script src= "js/contact.js"></script>
     <link rel="stylesheet" href="styles/style.css" >
 
+    <!--favicon-->
+    <link rel="icon" href="media/favicon/favicon.ico">
+
     <!-- https://stackoverflow.com/a/76120965 -->
     <!-- How to load header.html into each page -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -31,7 +34,17 @@
 	
     <script>
       $(function() {
-        $('#header').load('header.html');
+        $('#header').load('header.html', function() {
+          // After loading in the header set the appropriate navbar selection
+          let navbarItems = document.querySelectorAll("#navbarNav>ul>li>a");
+          
+          for (let navbarItem of navbarItems) {
+            if (navbarItem.innerHTML.toLowerCase() == "contact") {
+              navbarItem.style.fontWeight = "bold";
+            }
+          }
+        });
+
         $('#footer').load('footer.html');
       });
     </script>
