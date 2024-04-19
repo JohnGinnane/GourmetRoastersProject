@@ -227,6 +227,14 @@ a.nav-link {
     display: flex;
 }
 
+/* If nav bar is in mobile then change the buttons back to normal */
+@media (max-width: 992px) {
+    a.nav-link {
+        width: 100%;
+        padding: auto;
+        display: inline;
+    }
+}
 /*home page css*/
 /*carousal*/
 .carousal-image {
