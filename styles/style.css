@@ -283,11 +283,8 @@ a.nav-link {
     background-color: rgba(201, 164, 94, 0.7);
 }
 
-
-
-
 /*our story css*/
-#ourstory-img{
+#ourstory-img {
     border: 0.5rem solid #FFFFFF;
     border-bottom-width: 2rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -399,7 +396,7 @@ a.spotlight>img.img-thumbnail {
         text-shadow: 0.1rem 0.1rem 0.2rem rgba(62, 39, 35)
     }
     
-    #ourstory-img{
+    #ourstory-img {
         height: 42rem;
     }
 	
