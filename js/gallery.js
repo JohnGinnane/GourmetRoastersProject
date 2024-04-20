@@ -95,12 +95,15 @@ function update() {
     let out = '';
     
     // Iterate over all beans, and:
-    // 1. Reduce life
-    // 2. Make inactive if necessary
-    // 3. Change position based on velocity
-    // 4. Change velocity based on gravity
-    for(i = 0; i < beans.length; i++) {
+    // 1. Make inactive if necessary
+    // 2. Reduce life
+    // 3. Change velocity based on gravity
+    // 4. Change position based on velocity
+    // 5. Change angle based on angular velocity
+    for (let i = 0; i < beans.length; i++) {
         let bean = beans[i];
+
+        if (!bean.active) { continue; }
 
         if (bean.life <= 0 && bean.active) {
             bean.active = false;

@@ -382,7 +382,7 @@ a.spotlight>img.img-thumbnail {
 
 /*contact page*/
 #contact-page{
-    background-image: url('../media/contactpage/background-contactpage.webp'); 
+    background-image: url('../media/images/background-contactpage.webp'); 
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center;
@@ -392,9 +392,6 @@ a.spotlight>img.img-thumbnail {
 /*media queries homepage large screens*/
 @media (min-width: 992px) {
     /*home page*/
-    
-    
-    
     .carousal-text p{
         font-size: 2rem;
         font-style: italic;
