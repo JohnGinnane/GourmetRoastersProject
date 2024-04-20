@@ -32,7 +32,7 @@
                 var availability = document.getElementById("availability").value;
 
                 // Checking if text fields are blank and that an option has been selected
-                if (!name || !email || availability === "select" || role === "select") {
+                if (!name || !email || !availability || !role ) {
                     fieldsPopulated = false;
                 }
 
@@ -49,7 +49,7 @@
                 var email = document.getElementById("contactEmail").value;
 
                 // Checking if text fields are blank and that an option has been selected
-                if (!name || !email || month === "select" || level === "select") {
+                if (!name || !email || !month || !level ) {
                     fieldsPopulated = false;
                 }
 

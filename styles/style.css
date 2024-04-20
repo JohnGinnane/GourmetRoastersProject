@@ -405,10 +405,10 @@ a.spotlight>img.img-thumbnail {
         height: 42rem;
     }
 	
-	/* Hide all sections initially */
+	/* Hide all sections initially 
     #classesSection, #careersSection, #otherSection {
         display: none;
-    }
+    } */
     
     .about-us-img {
         height:350px;
@@ -503,3 +503,8 @@ h5 {
     height:250px;
 
 }
+
+/* Hide all sections initially */
+    #classesSection, #careersSection, #otherSection {
+        display: none;
+    }
