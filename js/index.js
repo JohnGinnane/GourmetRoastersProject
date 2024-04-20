@@ -1,18 +1,21 @@
 const ourStoryImg = document.getElementById('ourstory-img');
 const overlay = document.getElementById('overlay');
+
 function showOverlay() {
   overlay.style.display = 'flex';
-  ourStoryImg.classList.add('blury');
+  ourStoryImg.classList.add('blurry');
 }
 
 function hideOverlay() {
   overlay.style.display = 'none';
-  ourStoryImg.classList.remove('blury');
+  ourStoryImg.classList.remove('blurry');
 }
 
-
+// Handle when we hover over the image
 ourStoryImg.addEventListener('mouseenter', showOverlay);
-ourStoryImg.addEventListener('mouseleave', hideOverlay);
+
+// and when we stop hovering over the blurry div
+overlay.addEventListener("mouseleave", hideOverlay);
 
 
 // After our page loads, try to
