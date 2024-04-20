@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gourmet Roasters</title>
-  <link rel="stylesheet" href="lib/bootstrap-5.3/css/bootstrap.css">
+  
   <!--Bootstrap icons-->
+  <link rel="stylesheet" href="lib/bootstrap-5.3/css/bootstrap.css">
   <link rel="stylesheet" href="media/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
   <script src="lib/bootstrap-5.3/js/bootstrap.js"></script>
   <link rel="stylesheet" href="styles/style.css">
 
-    <!--favicon-->
-    <link rel="icon" href="media/favicon/favicon.ico">
-    <!-- https://stackoverflow.com/a/76120965 -->
-    <!-- How to load header.html into each page -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!--favicon-->
+  <link rel="icon" href="media/favicon/favicon.ico">
+  <!-- https://stackoverflow.com/a/76120965 -->
+  <!-- How to load header.html into each page -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	
 	<!-- Google Font Heading -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,23 +32,23 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 	
-    <script>
-      $(function() {
-        $('#header').load('header.html', function() {
-          // After loading in the header set the appropriate navbar selection
-          let navbarItems = document.querySelectorAll("#navbarNav>ul>li>a");
-          
-          for (let navbarItem of navbarItems) {
-            if (navbarItem.innerHTML.toLowerCase() == "home") {
-              navbarItem.style.fontWeight = "bold";
-            }
+  <script>
+    $(function() {
+      $('#header').load('header.html', function() {
+        // After loading in the header set the appropriate navbar selection
+        let navbarItems = document.querySelectorAll("#navbarNav>ul>li>a");
+        
+        for (let navbarItem of navbarItems) {
+          if (navbarItem.innerHTML.toLowerCase() == "home") {
+            navbarItem.style.fontWeight = "bold";
           }
-        });
-
-        $('#footer').load('footer.html');
-
+        }
       });
-    </script>
+
+      $('#footer').load('footer.html');
+
+    });
+  </script>
 </head>
 
 <body>
