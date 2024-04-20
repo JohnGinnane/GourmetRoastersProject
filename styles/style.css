@@ -376,6 +376,10 @@ a.spotlight {
     left:0;
 }
 
+.gallery-row {
+    margin: 20px 0px 20px 0px;
+}
+
 /*class css*/
 
 .class-logo{
