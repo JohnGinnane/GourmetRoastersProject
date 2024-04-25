@@ -57,15 +57,15 @@
 <body class="bg-light" id="contact-page">
 	<div id="header" class="container-fluid"></div>
 			<div class="container container d-flex justify-content-center  my-4">				
-					<div class="col-md-6">
+					<div class="col-lg-6 col-md-8  col-12">
 						<div class="card">
 							<div class="card-body">
 							<h1 class ="headings mb-4 text-center">Have any Questions? </h1>
 							<h2 class ="headings mb-4 text-center fs-5">Please use our contact form below. <i class="bi bi-send"></i></h2>
 							<form id="contactForm" class="needs-validation d-flex flex-column" onsubmit="Contact(); return false;" novalidate>
-								<div class="form-group">
+								<div class="form-group" style="height: auto;">
 									<label for="option">Please choose what you would like to hear more about:</label>
-									<select class="form-control" id="option" onchange="showOptions()">
+									<select class="form-control" id="contact-option" onchange="showOptions()">
 										<option value="">Select</option>
 										<option value="1">Careers</option>
 										<option value="2">Classes</option>
@@ -144,6 +144,11 @@
 										<option value="server">Server</option>
 									</select>
 									<div class="invalid-feedback">Please select a role.</div>
+								</div>
+								<div class="form-group">
+									<label for="years-experience">Numbers of years experience</label>
+									<input type="number" class="form-control" id="input-years-experience" name="years-experience" placeholder="Enter years" required>
+									<div class="invalid-feedback">Please enter a number between 0 and 100</div>
 								</div>
 							</div>
 							<div id="otherSection" class="was-validated">

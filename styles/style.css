@@ -228,6 +228,10 @@ a.nav-link {
 }
 
 /* Contact Page*/
+.form-group {
+    height: 90px;
+}
+
 #contact-page {
     /* Make sure the images always covers the entire page, never repeating or clipping */
     background: url('../media/images/background-contactpage.webp') center center fixed;

@@ -1,7 +1,7 @@
 // Author: Dylan
 
 function showOptions() {
-    var optionSelected = document.getElementById("option").value;
+    var optionSelected = document.getElementById("contact-option").value;
     var classesSection = document.getElementById("classesSection");
     var careersSection = document.getElementById("careersSection");
     var otherSection = document.getElementById("otherSection");
@@ -22,15 +22,17 @@ function showOptions() {
 }
 
 function Contact() {
-    var optionSelected = document.getElementById("option").value;
+    var optionSelected = document.getElementById("contact-option").value;
     var fieldsPopulated = true; // Checking all fields are populated
     var emailValid = true; // Checking user is submitting a valid email
+    var yearsValid = true; // Checking if number of years is valid
 
     if (optionSelected === "1") { // Careers
         // Fields to be checked and used in alert
         var name = document.getElementById("careerName").value;
         var email = document.getElementById("careerEmail").value;
         var role = document.getElementById("role").value;
+        var yearsExperience = document.getElementById("input-years-experience").value;
         var availability = document.getElementById("availability").value;
 
         // Checking if text fields are blank and that an option has been selected
@@ -41,6 +43,17 @@ function Contact() {
         // Check email is valid
         if (!email.includes('@')) {
             emailValid = false;
+        }
+
+        // Check if number of years is between 0 and 100
+        if (isNaN(yearsExperience)) {
+            yearsValid = false;
+        } else {
+            let numberYears = Number(yearsExperience);
+            
+            if (numberYears < 0 || numberYears > 100) {
+                yearsValid = false;
+            }
         }
     } 
         else if (optionSelected === "2") { // Classes
