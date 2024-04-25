@@ -41,7 +41,7 @@ function Contact() {
         var availability = document.getElementById("availability").value;
 
         // Checking if text fields are blank and that an option has been selected
-        if (!name || !email || !availability || !role ) {
+        if (!name || !email || !availability || !role || !yearsExperience) {
             fieldsPopulated = false;
         }
 
