@@ -63,7 +63,7 @@
 							<h1 class ="headings mb-4 text-center">Have any Questions? </h1>
 							<h2 class ="headings mb-4 text-center fs-5">Please use our contact form below. <i class="bi bi-send"></i></h2>
 							<form id="contactForm" class="needs-validation d-flex flex-column" onsubmit="Contact(); return false;" novalidate>
-								<div class="form-group" style="height: auto;">
+								<div class="form-group" style="height: 70px;">
 									<label for="option">Please choose what you would like to hear more about:</label>
 									<select class="form-control" id="contact-option" onchange="showOptions()">
 										<option value="">Select</option>
@@ -75,19 +75,19 @@
 							<br>
 								<div id="classesSection" class="was-validated">
 								<div class="form-group">
-									<label for="contactName">Please fill in your name:</label>
+									<label for="contactName">Your full name:</label>
 									<input type="text" class="form-control" id="contactName" name="contactName" placeholder="Enter your name here" required>
 									<div class="invalid-feedback">Please enter your name.</div>
 								</div>
 								<div class="form-group">
-									<label for="contactEmail">Please fill in your email:</label>
+									<label for="contactEmail">Your email:</label>
 									<input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="Enter your email here" required>
 									<div class="invalid-feedback">Please enter a valid email address.</div>
 								</div>
 								<div class="form-group">
-									<label for="month">Choose which month you would like to enrol in:</label>
+									<label for="month">Which month would you like to enrol in:</label>
 									<select class="form-control" id="month" name="month" required>
-										<option value="">Select</option>
+										<option value="">Select a month to enrol</option>
 										<option value="January">January</option>
 										<option value="February">February</option>
 										<option value="March">March</option>
@@ -104,67 +104,74 @@
 									<div class="invalid-feedback">Please select a month.</div>
 								</div>
 								<div class="form-group">
-									<label for="level">Choose the class level you would like to partake in:</label>
+									<label for="level">What class level you would like to partake in:</label>
 									<select class="form-control" id="level" name="level" required>
-										<option value="">Select</option>
+										<option value="">Select a class level</option>
 										<option value="beginner level">Beginner</option>
 										<option value="advanced level">Advanced</option>
 									</select>
 									<div class="invalid-feedback">Please select a class level.</div>
 								</div>
+								
 								<div class="form-group">
+									<label for="discountCode">Enter discount code:</label>
 									<input type="text" class="form-control" id="discountCode" name="discountCode" placeholder="Enter your discount code here">
 								</div>
 							</div>
 							<div id="careersSection" class="was-validated">
 								<div class="form-group">
-									<label for="careerName">Please fill in your name:</label>
+									<label for="careerName">Your full name:</label>
 									<input type="text" class="form-control" id="careerName" name="careerName" placeholder="Enter your name here" required>
 									<div class="invalid-feedback">Please enter your name.</div>
 								</div>
 								<div class="form-group">
-									<label for="careerEmail">Please fill in your email:</label>
+									<label for="careerEmail">Your email:</label>
 									<input type="email" class="form-control" id="careerEmail" name="careerEmail" placeholder="Enter your email here" required>
 									<div class="invalid-feedback">Please enter a valid email address.</div>
 								</div>
 								<div class="form-group">
-									<label for="availability">Availability:</label>
+									<label for="availability">What is your availability:</label>
 									<select class="form-control" id="availability" name="availability" required>
-										<option value="">Select</option>
+										<option value="">Select your availability</option>
 										<option value="full-time">Full-time</option>
 										<option value="part-time">Part-time</option>
 									</select>
 									<div class="invalid-feedback">Please select your availability.</div>
 								</div>
 								<div class="form-group">
-									<label for="role">Role:</label>
+									<label for="role">What is your preferred role:</label>
 									<select class="form-control" id="role" name="role" required>
-										<option value="">Select</option>
+										<option value="">Select preferred role</option>
 										<option value="barista">Barista</option>
 										<option value="server">Server</option>
 									</select>
 									<div class="invalid-feedback">Please select a role.</div>
 								</div>
-								<div class="form-group">
-									<label for="years-experience">Numbers of years experience</label>
-									<input type="number" class="form-control" id="input-years-experience" name="years-experience" placeholder="Enter years" required>
+								<div id="div-years-experience" class="form-group">
+									<label for="years-experience">Numbers of years experience:</label>
+									<input type="number" class="form-control" id="input-years-experience" min="0" max="100" name="years-experience" placeholder="Enter years of experience" required>
 									<div class="invalid-feedback">Please enter a number between 0 and 100</div>
 								</div>
 							</div>
 							<div id="otherSection" class="was-validated">
 								<div class="form-group">
-									<label for="otherName">Please fill in your name:</label>
+									<label for="otherName">Your full name:</label>
 									<input type="text" class="form-control" id="otherName" name="otherName" placeholder="Enter your name here" required>
 									<div class="invalid-feedback">Please enter your name.</div>
 								</div>
 								<div class="form-group">
-									<label for="otherEmail">Please fill in your email:</label>
+									<label for="otherEmail">Your email:</label>
 									<input type="email" class="form-control" id="otherEmail" name="otherEmail" placeholder="Enter your email here" required>
 									<div class="invalid-feedback">Please enter a valid email address.</div>
 								</div>
 								<div class="form-group">
+									<label for="other">Your question:</label>
 									<input type="text" class="form-control" id="other" name="other" placeholder="Type your question here" required>
 									<div class="invalid-feedback">Please enter your question.</div>
+								</div>
+								<div class="form-group">
+									<label for="input-last-coffee-date">When was the last time you had coffee here?</label>
+									<input type="date" class="form-control" id="input-last-coffee-date" name="last-coffee-date" min="1991-07-01">
 								</div>
 							</div>
 							<div class="text-center mb-4">

@@ -1,4 +1,9 @@
-// Author: Dylan
+// Author: Dylan, John
+document.addEventListener("DOMContentLoaded", function(e) {
+    // Make sure the max date is today
+    const inputLastCoffeeDate = document.getElementById("input-last-coffee-date");
+    inputLastCoffeeDate.max = new Date().toISOString().split("T")[0];
+});
 
 function showOptions() {
     var optionSelected = document.getElementById("contact-option").value;
@@ -50,14 +55,14 @@ function Contact() {
             yearsValid = false;
         } else {
             let numberYears = Number(yearsExperience);
-            
+
             if (numberYears < 0 || numberYears > 100) {
                 yearsValid = false;
             }
         }
     } 
         else if (optionSelected === "2") { // Classes
-        // Fields to be checked and used in alert
+        // Fields to be checked and used in showPopup
         var month = document.getElementById("month").value;
         var level = document.getElementById("level").value;
         var name = document.getElementById("contactName").value;
@@ -74,7 +79,7 @@ function Contact() {
         }
     } 
         else if (optionSelected === "3") { // Other
-        // Fields to be checked and used in alert
+        // Fields to be checked and used in showPopup
         var name = document.getElementById("otherName").value;
         var email = document.getElementById("otherEmail").value;
         var other = document.getElementById("other").value;
@@ -91,21 +96,32 @@ function Contact() {
     }
 
     if (!fieldsPopulated) {
-        alert("Please fill in all required fields.");
+        showPopup("Please fill in all required fields.");
         return false; // Prevents form submission
     }
 
     if (!emailValid) {
-        alert("Please enter a valid email address.");
+        showPopup("Please enter a valid email address.");
         return false; // Prevents form submission
     }
 
-    // Displaying specific alerts based on the selected option
-    if (optionSelected === "2") { // Classes
-        alert("Thank you, " + name + "! We will contact you at " + email + ", about our " + level + " classes in " + month + ".");
-    } else if (optionSelected === "1") { // Careers
-        alert("Thank you, " + name + "! We will contact you at " + email + ", if we have any " + availability + " " + role + " openings.");
-    } else if (optionSelected === "3") { // Other
-        alert("Thank you, " + name + "! We will contact you at " + email + ", to answer your question.");
+    if (!yearsValid) {
+        showPopup("Please enter a number between 0 and 100.");
+        return false;
     }
+
+    // Displaying specific showPopups based on the selected option
+    if (optionSelected === "2") { // Classes
+        showPopup("Thank you, " + name + "! We will contact you at " + email + ", about our " + level + " classes in " + month + ".");
+    } else if (optionSelected === "1") { // Careers
+        showPopup("Thank you, " + name + "! We will contact you at " + email + ", if we have any " + availability + " " + role + " openings.");
+    } else if (optionSelected === "3") { // Other
+        showPopup("Thank you, " + name + "! We will contact you at " + email + ", to answer your question.");
+    }
+}
+
+function showPopup(message) {
+    // This should look better as a modal
+    console.log(message); // For debugging in VS Code with preview
+    alert(message);
 }
