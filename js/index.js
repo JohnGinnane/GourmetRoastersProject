@@ -1,3 +1,4 @@
+// Author: Soorya, John
 const ourStoryImg = document.getElementById('ourstory-img');
 const overlay = document.getElementById('overlay');
 
@@ -22,6 +23,7 @@ overlay.addEventListener("mouseleave", hideOverlay);
 // find the time and day and
 // highlight the opening hours
 // Add a note if we're closing soon
+// Author: John
 const openingTimes = {
   monday:    { Open: "09:00",  Close: "18:00" },
   tuesday:   { Open: "09:00",  Close: "18:00" },
@@ -61,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let day = openingTimes[currentDay];
     let openTime = new Date(now.toDateString() + " " + day.Open);
     let closeTime = new Date(now.toDateString() + " " + day.Close);
-  ;
+    
     let minutesSinceOpened = datediff("minute", openTime, now);
     let minutesUntilClosed = datediff("minute", now, closeTime);
 

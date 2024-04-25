@@ -1,3 +1,5 @@
+// Author: John
+
 let modalAllergenInfo;
 
 document.addEventListener("DOMContentLoaded", function() {

@@ -1,3 +1,5 @@
+// Author: John
+
 let beans = [];
 const beanCoolDown = 100;
 const maxlife = 500;

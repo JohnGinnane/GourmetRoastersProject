@@ -1,3 +1,5 @@
+// Author: John
+
 let modalQuizResult;
 
 document.addEventListener("DOMContentLoaded", function() {
