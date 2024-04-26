@@ -41,12 +41,16 @@ function Contact() {
         var availability = document.getElementById("availability").value;
 
         // Checking if text fields are blank and that an option has been selected
+<<<<<<< Updated upstream
         if (!name || !email || !availability || !role || !yearsExperience) {
+=======
+        if (!name || !email || !availability || !role || !yearsExperience ) {
+>>>>>>> Stashed changes
             fieldsPopulated = false;
         }
 
         // Check email is valid
-        if (!email.includes('@')) {
+        if (!email.includes('@') || !email.includes(".com")) {
             emailValid = false;
         }
 
@@ -74,7 +78,7 @@ function Contact() {
         }
 
         // Check email is valid
-        if (!email.includes('@')) {
+        if (!email.includes('@') || !email.includes(".com")) {
             emailValid = false;
         }
     } 
@@ -83,45 +87,60 @@ function Contact() {
         var name = document.getElementById("otherName").value;
         var email = document.getElementById("otherEmail").value;
         var other = document.getElementById("other").value;
+        var date = document.getElementById("input-last-coffee-date").value;
 
         // Check fields have data
-        if (!name || !email || !other) {
+        if (!name || !email || !other || !date) {
             fieldsPopulated = false;
         }
 
         // Check email is valid
-        if (!email.includes('@')) {
+        if (!email.includes('@') || !email.includes(".com")){
             emailValid = false;
         }
     }
 
     if (!fieldsPopulated) {
-        showPopup("Please fill in all required fields.");
+        showErrorPopup("Please fill in all required fields.");
         return false; // Prevents form submission
     }
 
     if (!emailValid) {
-        showPopup("Please enter a valid email address.");
+        showErrorPopup("Please enter a valid email address.");
         return false; // Prevents form submission
     }
 
     if (!yearsValid) {
-        showPopup("Please enter a number between 0 and 100.");
+        showErrorPopup("Please enter a number between 0 and 100.");
         return false;
     }
 
     // Displaying specific showPopups based on the selected option
     if (optionSelected === "2") { // Classes
-        showPopup("Thank you, " + name + "! We will contact you at " + email + ", about our " + level + " classes in " + month + ".");
+        showSuccessPopup("Thank you, " + name + "! We will contact you at " + email + ", about our " + level + " classes in " + month + ".");
     } else if (optionSelected === "1") { // Careers
-        showPopup("Thank you, " + name + "! We will contact you at " + email + ", if we have any " + availability + " " + role + " openings.");
+        showSuccessPopup("Thank you, " + name + "! We will contact you at " + email + ", if we have any " + availability + " " + role + " openings.");
     } else if (optionSelected === "3") { // Other
-        showPopup("Thank you, " + name + "! We will contact you at " + email + ", to answer your question.");
+        showSuccessPopup("Thank you, " + name + "! We will contact you at " + email + ", to answer your question.");
     }
-}
 
-function showPopup(message) {
+
+//https://stackoverflow.com/questions/66334989/how-to-call-bootstrap5-modals-using-vanilla-javascript
+function showSuccessPopup(message) {
+    var successPopupModal = new bootstrap.Modal(document.getElementById("successPopupModal"));
     // This should look better as a modal
-    console.log(message); // For debugging in VS Code with preview
-    alert(message);
+    document.getElementById('SuccessPopupMessage').innerText = message; // populate with message
+    //show modal
+        successPopupModal.show();
+    }
+    
+function showErrorPopup(message) {
+     var errorPopupModal = new bootstrap.Modal(document.getElementById("errorPopupModal"));
+    document.getElementById('ErrorPopupMessage').innerText = message; // populate with message
+    //show modal	
+        errorPopupModal.show();
+    }
+
+//console.log(message); // For debugging in VS Code with preview
+//alert(message);
 }

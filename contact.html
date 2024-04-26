@@ -115,7 +115,7 @@
 								
 								<div class="form-group">
 									<label for="discountCode">Enter discount code:</label>
-									<input type="text" class="form-control" id="discountCode" name="discountCode" placeholder="Enter your discount code here">
+									<input type="text" class="form-control" id="discountCode" name="discountCode" placeholder="Enter your discount code here" maxlength="5">
 								</div>
 							</div>
 							<div id="careersSection" class="was-validated">
@@ -171,7 +171,7 @@
 								</div>
 								<div class="form-group">
 									<label for="input-last-coffee-date">When was the last time you had coffee here?</label>
-									<input type="date" class="form-control" id="input-last-coffee-date" name="last-coffee-date" min="1991-07-01">
+									<input type="date" class="form-control" id="input-last-coffee-date" name="last-coffee-date" min="1991-07-01" required>
 								</div>
 							</div>
 							<div class="text-center mb-4">
@@ -188,5 +188,40 @@
 				</a>
 			</div>
 	<footer id="footer" class="container-fluid fixed-bottom"></footer>
+	<!-- Successful Submission Modal -->
+	<div class="modal fade" id="successPopupModal" tabindex="-1" aria-labelledby="successPopupModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="successPopupModalLabel">Success</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <p id="SuccessPopupMessage"></p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	  <!-- Unsuccessful Submission Modal -->
+	  <div class="modal fade" id="errorPopupModal" tabindex="-1" aria-labelledby="errorPopupModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="errorPopupModalLabel">Error</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <p id="ErrorPopupMessage"></p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
 </body>
 </html>
