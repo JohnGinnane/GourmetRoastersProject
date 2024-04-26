@@ -41,11 +41,7 @@ function Contact() {
         var availability = document.getElementById("availability").value;
 
         // Checking if text fields are blank and that an option has been selected
-<<<<<<< Updated upstream
-        if (!name || !email || !availability || !role || !yearsExperience) {
-=======
         if (!name || !email || !availability || !role || !yearsExperience ) {
->>>>>>> Stashed changes
             fieldsPopulated = false;
         }
 
