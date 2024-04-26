@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
     inputLastCoffeeDate.max = new Date().toISOString().split("T")[0];
 });
 
+// In the real world we would do serverside validation
+// as this can be changed by clients
+const reValidEmail = /\S+@\S+\.\S+/;
+
 function showOptions() {
     var optionSelected = document.getElementById("contact-option").value;
     var classesSection = document.getElementById("classesSection");
@@ -45,8 +49,8 @@ function Contact() {
             fieldsPopulated = false;
         }
 
-        // Check email is valid
-        if (!email.includes('@') || !email.includes(".com")) {
+        // Check email is valid using regular expression defined at top of file
+        if (!reValidEmail.test(email)) {
             emailValid = false;
         }
 
@@ -60,8 +64,7 @@ function Contact() {
                 yearsValid = false;
             }
         }
-    } 
-        else if (optionSelected === "2") { // Classes
+    } else if (optionSelected === "2") { // Classes
         // Fields to be checked and used in showPopup
         var month = document.getElementById("month").value;
         var level = document.getElementById("level").value;
@@ -73,25 +76,26 @@ function Contact() {
             fieldsPopulated = false;
         }
 
-        // Check email is valid
-        if (!email.includes('@') || !email.includes(".com")) {
+        // Check email is valid using regular expression defined at top of file
+        if (!reValidEmail.test(email)) {
             emailValid = false;
         }
-    } 
-        else if (optionSelected === "3") { // Other
+    }  else if (optionSelected === "3") { // Other
         // Fields to be checked and used in showPopup
         var name = document.getElementById("otherName").value;
         var email = document.getElementById("otherEmail").value;
         var other = document.getElementById("other").value;
+        
+        // This field can be left blank
         var date = document.getElementById("input-last-coffee-date").value;
 
         // Check fields have data
-        if (!name || !email || !other || !date) {
+        if (!name || !email || !other) {
             fieldsPopulated = false;
         }
 
-        // Check email is valid
-        if (!email.includes('@') || !email.includes(".com")){
+        // Check email is valid using regular expression defined at top of file
+        if (!reValidEmail.test(email)) {
             emailValid = false;
         }
     }
@@ -121,6 +125,11 @@ function Contact() {
     }
 
 
+//console.log(message); // For debugging in VS Code with preview
+//alert(message);
+}
+
+
 //https://stackoverflow.com/questions/66334989/how-to-call-bootstrap5-modals-using-vanilla-javascript
 function showSuccessPopup(message) {
     var successPopupModal = new bootstrap.Modal(document.getElementById("successPopupModal"));
@@ -134,9 +143,5 @@ function showErrorPopup(message) {
      var errorPopupModal = new bootstrap.Modal(document.getElementById("errorPopupModal"));
     document.getElementById('ErrorPopupMessage').innerText = message; // populate with message
     //show modal	
-        errorPopupModal.show();
-    }
-
-//console.log(message); // For debugging in VS Code with preview
-//alert(message);
+    errorPopupModal.show();
 }
