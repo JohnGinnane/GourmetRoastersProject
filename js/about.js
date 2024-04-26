@@ -2,10 +2,46 @@
 
 let modalQuizResult;
 
+// Pop-Quiz Answers
+const popQuizAnswers = {
+    "pop-quiz-question-1": "Morocco",
+    "pop-quiz-question-2": "1991",
+    "pop-quiz-question-3": "Offer classes",
+    "pop-quiz-question-4": "Spearmint",
+    "pop-quiz-question-5": "Fair Trade",
+    "pop-quiz-question-6": "Joe and Jane"};
+
+const totalQuestions = 4;
+
 document.addEventListener("DOMContentLoaded", function() {
     modalQuizResult = document.getElementById('modal-about-us-quiz-result');
-    
-    // Added event to the pop quiz radio buttons
+
+    // First get all questions available
+    let popQuizQuestions = document.getElementsByClassName("pop-quiz-questions");
+    let arrayQuestions = new Array();
+
+    // Copy them to an array and make them invisible
+    for (let question of popQuizQuestions) {
+        arrayQuestions.push(question.outerHTML);
+    }
+
+    // Now until we only have 4 items left, 
+    // randomly pick ones and remove them
+    while (arrayQuestions.length > totalQuestions) {
+        let randomIndex = Math.floor(Math.random() * arrayQuestions.length);
+        arrayQuestions.splice(randomIndex, 1);
+    }
+
+    // Go back over remaining elements and add them to the pop quiz section
+    const popQuizContainer = document.getElementById("pop-quiz-container");
+    popQuizContainer.innerHTML = "";
+
+    for (let i = 0; i < arrayQuestions.length; i++) {
+        popQuizContainer.innerHTML += arrayQuestions[i];
+    }
+
+    // Finally add event to the pop quiz radio buttons
+    // We have to do this AFTER changing the HTML
     // Only if all four are filled in will we enable submit button
     let radioButtons = this.getElementsByClassName("pop-quiz-radio");
     
@@ -14,17 +50,27 @@ document.addEventListener("DOMContentLoaded", function() {
             radioButton_OnClick(button);
         });
     }
-
-    radioButton_OnClick(null);
 });
 
 function getAnswers() {
+    let groupNames = new Array();
+
+    // Get all radio buttons for the pop quiz
+    let radioButtons = document.getElementsByClassName("pop-quiz-radio");
+
+    // Then put the (distinct) names into a list
+    for (let button of radioButtons) {
+        if (!groupNames.includes(button.name)) {
+            groupNames.push(button.name);
+        }
+    }
+
+    // Next go over these groups and get answers (if any)
     let answers = [];
 
-    answers[0] = getRadioGroupSelection("pop-quiz-question-1").toLowerCase();
-    answers[1] = getRadioGroupSelection("pop-quiz-question-2").toLowerCase();
-    answers[2] = getRadioGroupSelection("pop-quiz-question-3").toLowerCase();
-    answers[3] = getRadioGroupSelection("pop-quiz-question-4").toLowerCase();
+    for (let group of groupNames) {
+        answers.push({"name": group, "answer": getRadioGroupSelection(group).toLowerCase()});
+    }
 
     return answers;
 }
@@ -36,7 +82,7 @@ function radioButton_OnClick(sender) {
 
     // If any answer is left blank then do nothing
     for (let answer of answers) {
-        if (answer == "") {
+        if (answer.answer === "") {
             submitEnabled = false;
             break;
         }
@@ -50,39 +96,38 @@ function popQuizSubmit() {
     let score = 0;
     let answers = getAnswers();
 
+    // console.log(answers);
+    // console.log(popQuizAnswers);
+
     // If any answer is left blank then do nothing
     for (let answer of answers) {
-        if (answer == "") { return ; }
+        if (answer.answer == "") { return ; }
+
+        // Check if the submitted answer is correct
+        if (answer.answer.toLowerCase() === popQuizAnswers[answer.name].toLowerCase()) {
+            score++;
+        }
     }
-    
-    if (answers[0] == "morocco")   { score++; }
-    if (answers[1] == "1991")      { score++; }
-    if (answers[2] == "classes")   { score++; }
-    if (answers[3] == "spearmint") { score++; }
     
     openQuizResults(score);
 }
 
 function openQuizResults(score) {
     // Set the right text in the modal
-    let strResult = "You scored " + score + " out of 4!<br>";
+    let strResult = "You scored " + score + " out of " + totalQuestions + "!<br>";
+    let scorePercent = score / totalQuestions;
+    console.log(scorePercent);
 
-    switch (score) {
-        case 4:
-            strResult += "Congratulations!";
-            break;
-        case 3:
-            strResult += "Great job!";
-            break;
-        case 2:
-            strResult += "Nice work";
-            break;
-        case 1:
-            strResult += "Good try";
-            break;
-        case 0:
-            strResult += "Better luck next time"
-            break;
+    if (scorePercent >= 0.9) {
+        strResult += "Congratulations!";
+    } else if (scorePercent >= 0.6) {
+        strResult += "Great job!";
+    } else if (scorePercent >= 0.4) {
+        strResult += "Nice work"
+    } else if (scorePercent >= 0.1) {
+        strResult += "Good try";
+    } else {
+        strResult += "Better luck next time";
     }
 
     // Set the right message on the coffee cup label

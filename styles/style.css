@@ -49,12 +49,17 @@ body {
 } */
 
 .pop-quiz-questions {
-    margin-bottom: 15px;
-    
+    margin-bottom: 15px;    
 }
 
 .pop-quiz-radio:checked {
     background: orange;
+}
+
+.pop-quiz-question-header {
+    height: 75px;
+    align-items: center;
+    display: flex;
 }
 
 /* Custom radio buttons */

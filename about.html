@@ -156,8 +156,8 @@
               Being one of the lucky cafes to survive the COVID pandemic, Gourmet Roasters sees a bright future 
               ahead of itself. Recently working with the Fair Trade company to make sure all ingredients 
               in all food and drinks are grown, processed, and transported as ethically as possible. 
-              From many parts of the city you the number of cafes visible would outnumber your fingers 
-              and toes but we hope that after trying our delicacies and drinks you'll only ever think 
+              From many parts of the city the number of cafes you could see would outnumber your fingers,
+              but we hope that after trying our delicacies and drinks you'll only ever think 
               of one place to get your fix, and that's Gourmet Roasters!
             </p>
           </div>
@@ -169,6 +169,10 @@
         </div>
 
         <!-- Quiz -->
+        <!-- It would be SO much nicer if I loaded
+             these in using JS so I don't have to 
+             make sure all the ids and names are
+             correct -->
         <div class="row d-flex justify-content-center align-items-center">
           <div class="row mb-4 text-center">
             <h2>Pop Quiz</h2>
@@ -176,9 +180,9 @@
           
           <div id="pop-quiz-container" class="row">
             <!-- Question 1 -->
-            <div class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
+            <div id="pop-quiz-question-1" class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
               <div class="row">
-                <h3 class="fs-5">What country did we explore?</h5>
+                <h3 class="fs-5 pop-quiz-question-header">What country did we explore?</h5>
               </div>
 
               <label class="form-check">
@@ -203,9 +207,9 @@
             </div>
             
             <!-- Question 2 -->
-            <div class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
+            <div id="pop-quiz-question-2" class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
               <div class="row">
-                <h3 class="fs-5">What year did we open?</h3>
+                <h3 class="fs-5 pop-quiz-question-header">What year did we open?</h3>
               </div>
 
               <label class="form-check">
@@ -230,36 +234,36 @@
             </div>
             
             <!-- Question 3 -->
-            <div class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
+            <div id="pop-quiz-question-3" class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
               <div class="row">
-                <h3 class="fs-5">What feature makes us stand out?</h3>
+                <h3 class="fs-5 pop-quiz-question-header">What feature makes us stand out?</h3>
               </div>
 
               <label class="form-check">
-                <input type="radio" id="pq-q3-a1" name="pop-quiz-question-3" class="pop-quiz-radio" value="Mason">
+                <input type="radio" id="pq-q3-a1" name="pop-quiz-question-3" class="pop-quiz-radio" value="Coffee in Mason Jars">
                 <i></i>Coffee in mason jars<br>
               </label>
 
               <label class="form-check">
-                <input type="radio" id="pq-q3-a2" name="pop-quiz-question-3" class="pop-quiz-radio" value="Barter">
+                <input type="radio" id="pq-q3-a2" name="pop-quiz-question-3" class="pop-quiz-radio" value="Barter to Buy">
                 <i></i>Barter to buy<br>
               </label>
               
               <label class="form-check">
-                <input type="radio" id="pq-q3-a3" name="pop-quiz-question-3" class="pop-quiz-radio" value="Free">
+                <input type="radio" id="pq-q3-a3" name="pop-quiz-question-3" class="pop-quiz-radio" value="Free Food Fridays">
                 <i></i>Free Food Fridays<br>
               </label>
               
               <label class="form-check">
-                <input type="radio" id="pq-q3-a4" name="pop-quiz-question-3" class="pop-quiz-radio" value="Classes">
+                <input type="radio" id="pq-q3-a4" name="pop-quiz-question-3" class="pop-quiz-radio" value="Offer Classes">
                 <i></i>Offer classes<br>
               </label>
             </div>
 
             <!-- Question 4 -->
-            <div class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
+            <div id="pop-quiz-question-4" class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
               <div class="row">
-                <h3 class="fs-5">Which of these is not a coffee bean?</h3>
+                <h3 class="fs-5 pop-quiz-question-header">Which of these is not a coffee bean?</h3>
               </div>
 
               <label class="form-check">
@@ -282,10 +286,64 @@
                 <i></i>Robusta<br>
               </label>
             </div>
+
+            <!-- Question 5 -->
+            <div id="pop-quiz-question-5" class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
+              <div class="row">
+                <h3 class="fs-5 pop-quiz-question-header">Which company have we started working with recently?</h3>
+              </div>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q5-a1" name="pop-quiz-question-5" class="pop-quiz-radio" value="McDonalds">
+                <i></i>McDonalds<br>
+              </label>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q5-a2" name="pop-quiz-question-5" class="pop-quiz-radio" value="Fair Trade">
+                <i></i>Fair Trade<br>
+              </label>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q5-a3" name="pop-quiz-question-5" class="pop-quiz-radio" value="Starbucks">
+                <i></i>Starbucks<br>
+              </label>
+              
+              <label class="form-check">
+                <input type="radio" id="pq-q5-a4" name="pop-quiz-question-5" class="pop-quiz-radio" value="Dublin Bus">
+                <i></i>Dublin Bus<br>
+              </label>
+            </div>
+            
+            <!-- Question 6 -->
+            <div id="pop-quiz-question-6" class="col-lg-3 col-md-6 col-12 pop-quiz-questions">
+              <div class="row">
+                <h3 class="fs-5 pop-quiz-question-header">What our the names of our founders?</h3>
+              </div>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q6-a1" name="pop-quiz-question-6" class="pop-quiz-radio" value="Janet and Joesphine">
+                <i></i>Janet and Joesphine<br>
+              </label>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q6-a2" name="pop-quiz-question-6" class="pop-quiz-radio" value="Valerie and Joshua">
+                <i></i>Valerie and Joshua<br>
+              </label>
+
+              <label class="form-check">
+                <input type="radio" id="pq-q6-a3" name="pop-quiz-question-6" class="pop-quiz-radio" value="Joe and Jane">
+                <i></i>Joe and Jane<br>
+              </label>
+              
+              <label class="form-check">
+                <input type="radio" id="pq-q6-a4" name="pop-quiz-question-6" class="pop-quiz-radio" value="Ben and Jerry">
+                <i></i>Ben and Jerry<br>
+              </label>
+            </div>
           </div>
 
           <div class="row justify-content-center">
-            <button class="btn project-btn" id="pop-quiz-submit" onclick="popQuizSubmit()">Submit</button>
+            <button class="btn project-btn" id="pop-quiz-submit" disabled="true" onclick="popQuizSubmit()">Submit</button>
           </div>
         </div>
       </div>
